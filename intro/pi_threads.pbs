@@ -1,0 +1,7 @@
+#PBS -N pi_threads
+#PBS -q phi-n1h72
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=00:15:00
+
+cd $PBS_O_WORKDIR
+time ./pi_threads 64 100000000000
