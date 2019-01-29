@@ -1,0 +1,3 @@
+[submodule "cnca-repo"]
+	path = cnca-repo
+	url = https://gitlab.com/CNCA_CeNAT/crhpcs-2019.git
