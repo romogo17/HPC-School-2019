@@ -41,9 +41,9 @@ watch -n 5 qstat -a
 ```
 To watch all jobs in the cluster, or:
 ```sh
-watch -n 5 'qstat -a | grep [job id]'
+watch -n 5 qstat -a -u [username]
 ```
-To watch a specific job.
+To watch a specific user jobs
 
 ## Retrieving results
 By default, every job will generate two output files, corresponding to standard output and standard error, following the name convention below:
