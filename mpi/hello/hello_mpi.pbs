@@ -1,0 +1,9 @@
+#PBS -N hello_mpi
+#PBS -q phi-n1h72
+#PBS -l nodes=1:ppn=2
+#PBS -l walltime=00:15:00
+
+module load mpich
+cd $PBS_O_WORKDIR
+mpirun -n 10 /home/taller-771/HPC-School-2019/mpi/hello/hello_mpi
+ 

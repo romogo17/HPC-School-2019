@@ -1,0 +1,8 @@
+#PBS -N vector
+#PBS -q phi-n2h72
+#PBS -l nodes=2:ppn=1
+#PBS -l walltime=00:15:00
+
+module load mpich
+cd $PBS_O_WORKDIR
+mpirun -n 10 ./vector 
