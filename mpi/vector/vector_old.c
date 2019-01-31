@@ -3,7 +3,7 @@
 #define N 10
 
 int main (int argc, char **argv) { 
-	int pid, size, origen, destino, ndat, tag, i, VA[N], suma; 
+	int pid, size, origen, destino, ndat, tag, i, VA[N]; 
 	MPI_Status info; 
 
 	MPI_Init(&argc, &argv); 
@@ -17,21 +17,14 @@ int main (int argc, char **argv) {
 		for (i=0; i<N; i++) VA[i] = i; 
 		destino = 1; tag = 0; 
 		MPI_Send(&VA[0], N, MPI_INT, destino, tag, MPI_COMM_WORLD); 
-		MPI_Recv(&suma, 1, MPI_INT, destino, tag, MPI_COMM_WORLD, &info); /* recibe la suma del destino, quien la sumó */
-		printf("P0 recibe de P%d: tag %d, suma = %d \n\n", info.MPI_SOURCE, info.MPI_TAG, suma);
 	} else if (pid == 1) { /* imprime el arreglo inicial (en 0s), recibe el arreglo y lo imprime */ 
 		printf("\nVA en P1 antes de recibir datos\n\n"); 
 		for (i=0; i<N; i++) printf("%4d", VA[i]); printf("\n\n"); 
-		origen = 0, tag = 0, suma = 0; 
+		origen = 0; tag = 0; 
 		MPI_Recv(&VA[0], N, MPI_INT, origen, tag, MPI_COMM_WORLD, &info); 
 		MPI_Get_count(&info, MPI_INT, &ndat); 
 		printf("P1 recibe de P%d: tag %d, ndat %d \n\n", info.MPI_SOURCE, info.MPI_TAG, ndat); 
-		for (i=0; i<ndat; i++) { 
-			printf("%4d", VA[i]); 
-			suma += VA[i];
-		}
-		printf("\n\n"); 
-		MPI_Send(&suma, 1, MPI_INT, origen, tag, MPI_COMM_WORLD); /* envia la suma final al origen, quien la recibe */
+		for (i=0; i<ndat; i++) printf("%4d", VA[i]); printf("\n\n"); 
 	} 
 	MPI_Finalize(); 
 	return 0; 

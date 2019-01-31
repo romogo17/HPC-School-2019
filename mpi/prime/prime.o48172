@@ -1,0 +1,17 @@
+=======================
+n = 1000, 2 processes
+pid 0, [0, 707[, local_sum = 126
+pid 1, [707, 1000[, local_sum = 42
+Total prime count from 2 processes: 168
+The process took 0.00034 secconds to run.
+
+=======================
+n = 100000, 4 processes
+pid 0, [0, 5000[, local_sum = 669
+pid 3, [8660, 10000[, local_sum = 152
+pid 1, [5000, 7071[, local_sum = 239
+pid 2, [7071, 8660[, local_sum = 169
+Total prime count from 4 processes: 1229
+The process took 0.01063 secconds to run.
+
+=======================

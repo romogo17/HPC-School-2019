@@ -1,0 +1,11 @@
+#PBS -N scatter_gather_split_sleep
+#PBS -q phi-n2h72
+#PBS -l nodes=2:ppn=1
+#PBS -l walltime=00:15:00
+
+module load mpich
+cd $PBS_O_WORKDIR
+time mpirun -n 1 ./scatter_gather_split_sleep 
+time mpirun -n 2 ./scatter_gather_split_sleep 
+time mpirun -n 4 ./scatter_gather_split_sleep 
+time mpirun -n 6 ./scatter_gather_split_sleep 
