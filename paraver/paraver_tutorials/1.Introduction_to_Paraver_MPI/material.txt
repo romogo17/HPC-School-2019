@@ -1,0 +1,11 @@
+Material
+--------
+
+This directory contains an example and guidelines to get started on the use of Paraver to analyze a trace. You can find: 
+
+A trace file Iberia-128-CA.chop1.1it.shifted.prv.gz for a 128 processor run of the WRF application. The trace was obtained on MareNostrum with Extrae, using the LD_PRELOAD mechanism to intercept entries and exits to MPI. The traces thus contain events on entry and exit to the MPI calls and hardware counter (cache misses, instructions and cycles) events at these points. 
+
+The corresponding .pcf file with the symbolic information for the numerically encoded records in the trace. 
+
+A directory (cfgs) with several configuration files that will be used during the session. 
+

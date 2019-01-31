@@ -1,0 +1,26 @@
+<clustering_definition use_duration="no" apply_log="no" normalize_data="yes" duration_filter="1000" threshold_filter="0">
+  <DBSCAN epsilon="0.010" min_points="10"/>
+
+  <single_event apply_log="yes" name="L2misses">
+    <event_type>42000004</event_type>
+    <factor>1.0</factor>
+  </single_event>
+
+  <single_event apply_log="yes" name="Instructions">
+    <event_type>42000050</event_type>
+    <factor>1.0</factor>
+  </single_event>
+
+<mixed_events apply_log="no" name="CPI" operation="/">
+    <event_type_a>42000059</event_type_a>
+    <event_type_b>42000050</event_type_b>
+    <factor>1.0</factor>
+  </mixed_events>
+
+
+
+<plot_options>
+    <x_metric title="L2 misses">L2misses</x_metric>
+    <y_metric title="Instructions">Instructions</y_metric>
+  </plot_options>
+</clustering_definition>

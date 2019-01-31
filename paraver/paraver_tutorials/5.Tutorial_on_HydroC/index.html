@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>5. HydroC Tutorial</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.4  (Linux)">
+	<META NAME="CREATED" CONTENT="20111024;21510000">
+	<META NAME="CHANGED" CONTENT="20111202;14104900">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-left: 2cm; margin-right: 3cm; margin-top: 2.5cm; margin-bottom: 2.5cm }
+		H1 { margin-top: 0.85cm; margin-bottom: 0cm; direction: ltr; color: #365f91; line-height: 115%; text-align: left; widows: 2; orphans: 2 }
+		H1.western { font-family: "Cambria", serif; font-size: 14pt; so-language: en-US }
+		H1.cjk { font-family: "Albany AMT", "Arial"; font-size: 14pt; so-language: zxx }
+		H1.ctl { font-family: "Arial Unicode MS", serif; font-size: 14pt; so-language: ar-SA }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 115%; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: "Calibri", sans-serif; font-size: 11pt; so-language: en-US }
+		P.cjk { font-family: "Albany AMT", "Arial"; font-size: 11pt; so-language: zxx }
+		P.ctl { font-family: "Arial Unicode MS", serif; font-size: 11pt; so-language: ar-SA }
+		H2 { margin-top: 0.35cm; margin-bottom: 0cm; direction: ltr; color: #4f81bd; line-height: 115%; text-align: left; widows: 2; orphans: 2 }
+		H2.western { font-family: "Cambria", serif; font-size: 13pt; so-language: en-US }
+		H2.cjk { font-family: "Albany AMT", "Arial"; font-size: 13pt; so-language: zxx }
+		H2.ctl { font-family: "Arial Unicode MS", serif; font-size: 13pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" TEXT="#000000" DIR="LTR">
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+<BR><BR>
+</H1>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+<META NAME="CHANGEDBY" CONTENT="Pedro González"><SPAN LANG="en-US">Guided
+demo MPI analysis:</SPAN></H1>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	trace </SPAN><A HREF="mpi/HydroC_mpi64.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi/HydroC_mpi64.prv.gz</SPAN></FONT></A><SPAN LANG="en-US">
+	</SPAN>
+	</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration file </SPAN><A HREF="cfgs/mpi/mpi_stats.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/mpi_stats.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		configuration pops up a table with %time of every thread spends in
+		every MPI call.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Look
+		at the global statistics at the bottom of the outside mpi column.
+		Entry <I>Average</I> represents the application parallel
+		efficiency, entry <I>Avg/Max</I> represents the global load
+		balance, entry <I>Maximum</I> represents the communication
+		efficiency.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Change
+		in the main window the metric to <I>nb</I> <I>of</I> <I>calls</I>
+		to look at the number of invocations and <I>Average</I> <I>duration</I>
+		to look at the average duration of each MPI call</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Open
+		the Control Window from the table (top left button). Use the zoom
+		and contextual menu (right click) to navigate, view communications
+		lines... 
+		</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration file </SPAN><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US"><A HREF="cfgs/mpi/user_functions.cfg">cfgs/mpi/user_functions.cfg</A>.</SPAN></FONT></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		configuration pops up a timeline where every color corresponds to
+		one of the instrumented user functions,</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Zoom
+		to identify one iteration and synchronize the interval with the MPI
+		call timeline using the <I>Copy</I> and <I>Paste</I> commands.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Double
+		click on one color over the timeline to open the textual display of
+		the actual function name and duration. Use the menu option <I>Info</I>
+		<I>Panel</I> to hide it again.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Create
+		a table showing the default statistic (Time) accumulated per user
+		function.</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration file </SPAN><A HREF="cfgs/mpi/2dh_usefulduration.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/2dh_usefulduration.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		configuration shows a histogram of the duration for the computation
+		regions. The computation regions are delimited by the exit from an
+		MPI call and the entry to the next call.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Using
+		the <I>Open</I> <I>Filtered</I> <I>Control</I> <I>Window</I> button
+		select one of the histogram modes, this will create a new timeline
+		with the selected duration range. Use the <I>Fit</I> <I>Semantic</I>
+		<I>Scale</I> →<I>Fit</I> <I>Both</I> option to set the gradient
+		color such that it fits the actual range of durations in the new
+		window.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Modify
+		the Statistics of the useful duration histogram to use the
+		<I>correlate</I> <I>with</I> <I>metric</I> and verify that the
+		metric wiindow is <I>Instructions</I> <I>per</I> <I>cycle</I>. Now
+		the cell color will correspond to the IPC showing the correlation
+		between duration (position) and IPC (color). Zoom into an
+		unbalanced mode to verify if the unbalance is related to a
+		different IPC.</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration file </SPAN><A HREF="cfgs/mpi/2dh_useful_instructions.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/2dh_useful_instructions.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		configuration pops up a histogram of the instructions on the
+		computing regions (outside MPI).</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Copy
+		the scale of one iteration from the useful duration timeline to
+		this new histogram. Vertical lines identify well balanced regions
+		with respect to the number of instructions.</P>
+	</UL>
+</UL>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+Further questions:</H1>
+<H2 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+<SPAN LANG="en-US">Paraver profile analyses</SPAN></H2>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration file </SPAN><A HREF="cfgs/mpi/2dp_uf_several_stats_numbers.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/2dp_uf_several_stats_numbers.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	Study the three different profiles. What do they compute (control
+	window, statistic, data window)?</SPAN></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Are
+	all routines equally balanced in terms of time?</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Are
+	all routines equally balanced in terms of instructions? Any of them
+	is worse balanced?</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Do
+	all routines achieve the same IPC. Which seem to have bad IPC?</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Check
+	if L2 miss ratio is a possible cause of the observed poor IPCs
+	(</SPAN><A HREF="cfgs/mpi/L2D_miss_ratio.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/L2D_miss_ratio.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	displays the number of L2D misses per 1kinstr). Hint: clone the
+	2DP-uf-IPC profile and change data window.</SPAN></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	equation of state:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Average
+		duration per call? Is the granularity enough to parallelize with
+		OpenMP, GPU?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">How
+		many invocations?</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	riemann:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Average
+		duration?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Average
+		IPC? 
+		</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Which
+	routines call MPI and which not? Use </SPAN><A HREF="cfgs/mpi/2dp_uf_percentMPI.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/2dp_uf_percentMPI.cfg</SPAN></FONT></A><SPAN LANG="en-US">.
+	</SPAN>
+	</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Scaling:
+	Load also trace of 128 processes (</SPAN><A HREF="mpi/HydroC_mpi128.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi/HydroC_mpi128.prv.gz</SPAN></FONT></A><SPAN LANG="en-US">)
+	and </SPAN><A HREF="cfgs/mpi/2dp_uf_several_stats_numbers.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/2dp_uf_several_stats_numbers.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Pop
+		up and synchronize the user functions views. Does it scale well?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Which
+		routines scale well or bad? (η=T<SUB>64</SUB>/2*T<SUB>128</SUB>)</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Do
+		they scale well in terms of number of instructions?</P>
+	</UL>
+</UL>
+<H2 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+Paraver histogram analyses</H2>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	</SPAN><A HREF="cfgs/mpi/3dh_several_uf.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/3dh_several_uf.cfg</SPAN></FONT></A></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	UpdateConservativeVars</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Imbalanced?
+		Multimodal distribution? 
+		</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Which
+		instances take more time and which less?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Is
+		it due to differences in the number of instructions? 
+		</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	equation_of_state</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Are
+		all the invocations of the same duration?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Is
+		there a pattern?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Reason
+		for difference between them?</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	riemann:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">All
+		invocations of the same duration? Multimodal? Reason?</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Is
+		the distribution similar at 64 and 128 processes?&shy;</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Routine
+	make boundary</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">What
+		is its average IPC? What is the average IPC of the computation
+		outside MPI? Why are they so different?</P>
+	</UL>
+</UL>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm; page-break-before: always">
+<BR><BR>
+</H1>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+<SPAN LANG="en-US">Guided demo <SPAN LANG="es-ES">Dimemas</SPAN>
+analysis:</SPAN></H1>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">In
+	directory Dimemas we have prepared:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">The
+		original </SPAN><A HREF="Dimemas/HydroC_mpi64.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">HydroC_mpi64.prv.gz</SPAN></FONT></A><SPAN LANG="en-US">
+		and its translation to the Dimemas format </SPAN><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">HydroC_mpi64.trf</SPAN></FONT></P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Dimemas
+		configuration files and the corresponding traces generated by the
+		Dimemas simulation for:</P>
+		<UL>
+			<UL>
+				<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">
+				<FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">dimemas_files/64.nominal.cfg</SPAN></FONT><SPAN LANG="en-US">:
+				a “nominal” setup: 8 processes per node, one adapter per
+				node, 1GB/s, no network contention. </SPAN><A HREF="Dimemas/D.64.nominal.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.nominal.prv.gz</SPAN></FONT></A></P>
+				<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">
+				<FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">dimemas_files/64.10xCPUr.cfg</SPAN></FONT><SPAN LANG="en-US">:
+				assuming 10x faster CPU for all computations. </SPAN><A HREF="Dimemas/D.64.10xCPUr.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.10xCPUr.prv.gz</SPAN></FONT></A></P>
+				<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">
+				<FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">dimemas_files/64.10xCPUr.1xEOS.cfg</SPAN></FONT><SPAN LANG="en-US">:
+				assuming 10x faster CPU except for routine equation_of_service
+				that is assumed to stay equal. </SPAN><A HREF="Dimemas/D.64.10xCPUr.1xEOS.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.10xCPUr.1xEOS.prv.gz</SPAN></FONT></A></P>
+				<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">
+				<FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">dimemas_files/64.10xCPUr.0.1xEOS.cfg</SPAN></FONT><SPAN LANG="en-US">:
+				Assuming 10x faster CPU except for routine equation_of_service
+				that is assumed to actually slow down by 10x due to
+				parallelization overheads. </SPAN><A HREF="Dimemas/D.64.10xCPUr.0.1xEOS.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.10xCPUr.0.1xEOS.prv.gz</SPAN></FONT></A></P>
+			</UL>
+		</UL>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	the configuration file </SPAN><A HREF="cfgs/mpi/user_functions.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi/user_functions.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	on each of them. The loaded views will show the structure and
+	relative impact of the different regions in the total time of each
+	case. Copy the time scale from the original trace to each other
+	trace to compare global scalability.</SPAN></P>
+</UL>
+<H2 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+Further Dimemas analysis</H2>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">A
+	similar process can be done using configuration files:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">dimemas_files/64.ideal.cfg:
+		An “ideal” setup with instantaneous communication.
+		</SPAN><A HREF="Dimemas/D.64.ideal.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.ideal.prv.gz</SPAN></FONT></A></P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">dimemas_files/64.NxCPUr.MBW.cfg:
+		configuration of hypothetical target machine with N times faster
+		CPUs and M (0.1 and 0.01) times the original bandwidth.
+		</SPAN><A HREF="Dimemas/D.64.100xCPUr.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.100xCPUr.prv.gz</SPAN></FONT></A><SPAN LANG="en-US">,
+		</SPAN><A HREF="Dimemas/D.64.100xCPUr.0.1xBW.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.100xCPUr.0.1xBW.prv.gz</SPAN></FONT></A><SPAN LANG="en-US">,
+		</SPAN><A HREF="Dimemas/D.64.100xCPUr.0.01xBW.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">D.64.100xCPUr.0.01xBW.prv.gz</SPAN></FONT></A></P>
+	</UL>
+</UL>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm; page-break-before: always">
+<BR><BR>
+</H1>
+<H1 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+<SPAN LANG="en-US">Guided demo MPI+CUDA analysis:</SPAN></H1>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	trace </SPAN><A HREF="mpi+cuda/cuHydro_mpi32.filter1.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi+cuda/cuHydro_mpi32.filter1.prv.gz</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		tracefile contains only the MPI calls, user function and “large”
+		computing burst from the MPI+CUDA execution. It has been obtained
+		from the original trace with the filtering utilities in Paraver.</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration files </SPAN><A HREF="cfgs/mpi/mpi_stats.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi/mpi_stats.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	and </SPAN><A HREF="cfgs/mpi/user_functions.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi/user_functions.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.35cm; margin-bottom: 0cm">
+		Use them to compare the execution of the MPI and the MPI+CUDA
+		version. Compare the structure within one of the iterations on the
+		two versions.</P>
+	</UL>
+</UL>
+<P LANG="en-US" CLASS="western" STYLE="margin-left: 3.81cm; margin-top: 0.35cm; margin-bottom: 0cm">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	trace </SPAN><A HREF="mpi+cuda/cuHydro_mpi32.chop1.prv.gz"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi+cuda/cuHydro_mpi32.chop1.prv.gz</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">This
+		tracefile contains approximately a chop of one of the double
+		iterations.. It has been obtained from the original trace with the
+		cutting utilities in Paraver.</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	configuration files </SPAN><A HREF="cfgs/mpi+cuda/3dp_cudakernel_uf.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi+cuda/3dp_cudakernel_uf.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	and </SPAN><A HREF="cfgs/mpi+cuda/cuda_events.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi+cuda/cuda_events.cfg</SPAN></FONT></A></P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.35cm; margin-bottom: 0cm">
+		The first configuration shows a profile of the number of cuda
+		kernel invocations by each user function. Use the <I>3D</I> –
+		<I>Plane</I> chooser in the general Paraver window to select a
+		different user function.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.35cm; margin-bottom: 0cm">
+		The second configuration shows the CUDA runtime events
+		instrumented.</P>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-top: 0.35cm; margin-bottom: 0cm">
+		Use the zoom into a small area (control+select area) in one of them
+		and synchronize all the timelines (<I>Copy</I> and <I>Paste</I>
+		<I>Default</I> <I>Special</I>).</P>
+	</UL>
+</UL>
+<H2 LANG="en-US" CLASS="western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+Further CUDA analysis</H2>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm"><SPAN LANG="en-US">Load
+	the configurations </SPAN><A HREF="cfgs/mpi+cuda/2dp_cudakernel.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">cfgs/mpi+cuda/2dp_cudakernel.cfg</SPAN></FONT></A><SPAN LANG="en-US">
+	and </SPAN><A HREF="cfgs/mpi/2dp_uf.cfg"><FONT FACE="Courier, Courier New, monospace"><SPAN LANG="en-US">mpi/2dp_uf.cfg</SPAN></FONT></A></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">What
+	is the average duration of the different kernels? And user
+	functions?</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">How
+	many invocations of the different kernels appear? And user
+	functions? 
+	</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Pop
+	up the view cuda events and zoom to show just the two lines
+	corresponding to process 1. Use <I>Paste</I> <I>Default</I> <I>Special</I>
+	to see the exact same region and objects in the cuda kernel view.</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Look
+	for the cuRiemann function invocations.</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">How
+		many Kernel invocations per cuRiemann function are done? How long
+		do they take? Is the overhead relevant? Is the GPU speed-up versus
+		the sequential code good for this routine?</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">Look
+	for the cuEquationOfState function</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm">How
+		many Kernel invocations to the cuEquationOfState function are done?
+		How long do they take? Is the same all over the trace? Is the
+		overhead relevant?</P>
+	</UL>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0.35cm; line-height: 115%; widows: 2; orphans: 2">
+<BR><BR>
+</P>
+</BODY>
+</HTML>

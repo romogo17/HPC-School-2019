@@ -1,0 +1,28 @@
+<clustering_definition use_duration="no" apply_log="yes" normalize_data="yes" duration_filter="4000" threshold_filter="0">
+  <DBSCAN epsilon=".045" min_points="5"/>
+  <clustering_parameters>
+    <single_event apply_log="yes" name="Instr">
+      <event_type>42000050</event_type>
+      <factor>1.0</factor>
+      <range_min>5000000</range_min>
+    </single_event>
+
+    <mixed_events apply_log="no" name="IPC" operation="/">
+      <event_type_a>42000050</event_type_a>
+      <event_type_b>42000059</event_type_b>
+      <factor>1.0</factor>
+    </mixed_events>
+
+<mixed_events apply_log="no" name="CPI" operation="/">
+    <event_type_a>42000059</event_type_a>
+    <event_type_b>42000050</event_type_b>
+    <factor>1.0</factor>
+  </mixed_events>
+
+
+  </clustering_parameters>
+  <plot_options raw_metrics="yes">
+    <x_metric title="IPC">IPC</x_metric>
+    <y_metric title="Instructions Completed">Instr</y_metric>
+  </plot_options>
+</clustering_definition>

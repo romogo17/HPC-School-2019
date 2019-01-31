@@ -1,0 +1,524 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+
+
+EVENT_TYPE
+6    40000001    Application
+6    40000003    Flushing Traces
+6    40000004    I/O Read
+6    40000005    I/O Write
+VALUES
+1      Begin
+0      End
+
+
+EVENT_TYPE
+6    40000012    Tracing
+VALUES
+0      Disabled
+1      Enabled
+
+
+EVENT_TYPE
+6    40000011    I/O Size
+
+
+EVENT_TYPE
+1    50100001    Send Size in MPI Global OP
+1    50100002    Recv Size in MPI Global OP
+1    50100003    Root in MPI Global OP
+1    50100004    Communicator in MPI Global OP
+
+
+EVENT_TYPE
+1    51100001    Send Size in PACX Global OP
+1    51100002    Recv Size in PACX Global OP
+1    51100003    Root in PACX Global OP
+1    51100004    Communicator in PACX Global OP
+
+
+EVENT_TYPE
+9   50000001    MPI Point-to-point
+VALUES
+4   MPI_Irecv
+3   MPI_Isend
+2   MPI_Recv
+1   MPI_Send
+6   MPI_Waitall
+0   Outside MPI
+
+
+EVENT_TYPE
+9   50000002    MPI Collective Comm
+VALUES
+10   MPI_Allreduce
+8   MPI_Barrier
+0   Outside MPI
+
+
+EVENT_TYPE
+9   50000003    MPI Other
+VALUES
+21   MPI_Comm_create
+19   MPI_Comm_rank
+20   MPI_Comm_size
+32   MPI_Finalize
+31   MPI_Init
+0   Outside MPI
+
+
+EVENT_TYPE
+0   63000001    CUDA library call
+VALUES
+0 End
+1 cudaLaunch
+2 cudaConfigureCall
+3 cudaMemcpy
+4 cudaThreadSynchronize
+5 cudaStreamSynchronize
+
+EVENT_TYPE
+0   63000002    cudaMemcpy size
+
+EVENT_TYPE
+7  42000050 Instr completed (PAPI_TOT_INS)
+7  42000059 Total cycles (PAPI_TOT_CYC)
+7  42000002 L2D cache misses (PAPI_L2_DCM)
+7  42000052 FP instructions (PAPI_FP_INS)
+7  42009999 Active hardware counter set
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0    70000001    Caller at level 1
+0    70000002    Caller at level 2
+0    70000003    Caller at level 3
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   GetDevice
+4   DeviceSet
+5   main
+6   process_args
+7   vtkfile
+8   cuEquationOfState
+9   cuMakeBoundary
+10   cuHydroGodunov
+11   cuGatherConservativeVars
+12   cuConstoprim
+13   cuSlope
+14   cuTrace
+15   cuQleftright
+16   cuRiemann
+17   cuUpdateConservativeVars
+18   __device_stub__Z14LoopKQEforRowslPdS_S_dlllill
+19   __device_stub__Z7LoopEOSllddiiPdS_S_S_
+20   __device_stub__Z12LoopKcourantPdS_dPKdlill
+21   initDevice
+22   __device_stub__Z11pack_arrayvilllPdS_
+23   __device_stub__Z13unpack_arrayvilllPdS_
+24   __device_stub__Z20Loop1KcuMakeBoundarylldlllllPd
+25   cudaLaunch<char>
+26   __device_stub__Z18Loop1KcuConstoprimlldliiPdS_S_
+27   __device_stub__Z13Loop1KcuTracedllldddiiPdS_S_S_S_
+28   __device_stub__Z18Loop1KcuQleftrightllliiPdS_S_S_
+29   Loop10KcuRiemann
+30   __device_stub__Z14Loop1KcuCmpflxlldiiPdS_
+31   __device_stub__Z14Loop1KcuUpdateldllllliiPdS_S_
+32   __device_stub__Z11pack_arrayhilllPdS_
+33   __device_stub__Z13unpack_arrayhilllPdS_
+34   __device_stub__Z20Loop2KcuMakeBoundarylldlllllPd
+35   __device_stub__Z14Loop3KcuUpdateldllllliiPdS_S_
+
+
+EVENT_TYPE
+0    80000001    Caller line at level 1
+0    80000002    Caller line at level 2
+0    80000003    Caller line at level 3
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   44 (GetDevice.cu)
+4   88 (GetDevice.cu)
+5   89 (GetDevice.cu)
+6   96 (GetDevice.cu)
+7   102 (GetDevice.cu)
+8   106 (GetDevice.cu)
+9   108 (GetDevice.cu)
+10   119 (GetDevice.cu)
+11   123 (GetDevice.cu)
+12   126 (GetDevice.cu)
+13   99 (cuConservar.cu)
+14   228 (cuConservar.cu)
+15   70 (cuConstoprim.cu)
+16   53 (cuEquationOfState.cu)
+17   316 (cuHydroGodunov.cu)
+18   267 (cuMakeBoundary.cu)
+19   300 (cuMakeBoundary.cu)
+20   306 (cuMakeBoundary.cu)
+21   310 (cuMakeBoundary.cu)
+22   314 (cuMakeBoundary.cu)
+23   318 (cuMakeBoundary.cu)
+24   407 (cuMakeBoundary.cu)
+25   414 (cuMakeBoundary.cu)
+26   419 (cuMakeBoundary.cu)
+27   423 (cuMakeBoundary.cu)
+28   427 (cuMakeBoundary.cu)
+29   49 (cuQleftright.cu)
+30   269 (cuRiemann.cu)
+31   61 (cuSlope.cu)
+32   175 (cuTrace.cu)
+33   42 (main.c)
+34   47 (main.c)
+35   63 (main.c)
+36   81 (main.c)
+37   86 (main.c)
+38   88 (main.c)
+39   129 (main.c)
+40   224 (parametres.c)
+41   225 (parametres.c)
+42   173 (vtkfile.c)
+43   176 (vtkfile.c)
+44   284 (vtkfile.c)
+45   949 (cuda_runtime.h)
+46   949 (cuda_runtime.h)
+47   949 (cuda_runtime.h)
+48   40 (gridfuncs.cu)
+49   949 (cuda_runtime.h)
+50   949 (cuda_runtime.h)
+51   949 (cuda_runtime.h)
+52   949 (cuda_runtime.h)
+53   949 (cuda_runtime.h)
+54   949 (cuda_runtime.h)
+55   949 (cuda_runtime.h)
+56   949 (cuda_runtime.h)
+57   949 (cuda_runtime.h)
+58   949 (cuda_runtime.h)
+59   949 (cuda_runtime.h)
+60   949 (cuda_runtime.h)
+61   949 (cuda_runtime.h)
+62   949 (cuda_runtime.h)
+63   949 (cuda_runtime.h)
+64   949 (cuda_runtime.h)
+
+
+EVENT_TYPE
+0    60000019    User function
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   GetDevice
+4   DeviceSet
+5   main
+6   process_args
+7   vtkfile
+8   cuEquationOfState
+9   cuMakeBoundary
+10   cuHydroGodunov
+11   cuGatherConservativeVars
+12   cuConstoprim
+13   cuSlope
+14   cuTrace
+15   cuQleftright
+16   cuRiemann
+17   cuUpdateConservativeVars
+18   __device_stub__Z14LoopKQEforRowslPdS_S_dlllill
+19   __device_stub__Z7LoopEOSllddiiPdS_S_S_
+20   __device_stub__Z12LoopKcourantPdS_dPKdlill
+21   initDevice
+22   __device_stub__Z11pack_arrayvilllPdS_
+23   __device_stub__Z13unpack_arrayvilllPdS_
+24   __device_stub__Z20Loop1KcuMakeBoundarylldlllllPd
+25   cudaLaunch<char>
+26   __device_stub__Z18Loop1KcuConstoprimlldliiPdS_S_
+27   __device_stub__Z13Loop1KcuTracedllldddiiPdS_S_S_S_
+28   __device_stub__Z18Loop1KcuQleftrightllliiPdS_S_S_
+29   Loop10KcuRiemann
+30   __device_stub__Z14Loop1KcuCmpflxlldiiPdS_
+31   __device_stub__Z14Loop1KcuUpdateldllllliiPdS_S_
+32   __device_stub__Z11pack_arrayhilllPdS_
+33   __device_stub__Z13unpack_arrayhilllPdS_
+34   __device_stub__Z20Loop2KcuMakeBoundarylldlllllPd
+35   __device_stub__Z14Loop3KcuUpdateldllllliiPdS_S_
+
+
+EVENT_TYPE
+0    60000119    User function line
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   44 (GetDevice.cu)
+4   88 (GetDevice.cu)
+5   89 (GetDevice.cu)
+6   96 (GetDevice.cu)
+7   102 (GetDevice.cu)
+8   106 (GetDevice.cu)
+9   108 (GetDevice.cu)
+10   119 (GetDevice.cu)
+11   123 (GetDevice.cu)
+12   126 (GetDevice.cu)
+13   99 (cuConservar.cu)
+14   228 (cuConservar.cu)
+15   70 (cuConstoprim.cu)
+16   53 (cuEquationOfState.cu)
+17   316 (cuHydroGodunov.cu)
+18   267 (cuMakeBoundary.cu)
+19   300 (cuMakeBoundary.cu)
+20   306 (cuMakeBoundary.cu)
+21   310 (cuMakeBoundary.cu)
+22   314 (cuMakeBoundary.cu)
+23   318 (cuMakeBoundary.cu)
+24   407 (cuMakeBoundary.cu)
+25   414 (cuMakeBoundary.cu)
+26   419 (cuMakeBoundary.cu)
+27   423 (cuMakeBoundary.cu)
+28   427 (cuMakeBoundary.cu)
+29   49 (cuQleftright.cu)
+30   269 (cuRiemann.cu)
+31   61 (cuSlope.cu)
+32   175 (cuTrace.cu)
+33   42 (main.c)
+34   47 (main.c)
+35   63 (main.c)
+36   81 (main.c)
+37   86 (main.c)
+38   88 (main.c)
+39   129 (main.c)
+40   224 (parametres.c)
+41   225 (parametres.c)
+42   173 (vtkfile.c)
+43   176 (vtkfile.c)
+44   284 (vtkfile.c)
+45   949 (cuda_runtime.h)
+46   949 (cuda_runtime.h)
+47   949 (cuda_runtime.h)
+48   40 (gridfuncs.cu)
+49   949 (cuda_runtime.h)
+50   949 (cuda_runtime.h)
+51   949 (cuda_runtime.h)
+52   949 (cuda_runtime.h)
+53   949 (cuda_runtime.h)
+54   949 (cuda_runtime.h)
+55   949 (cuda_runtime.h)
+56   949 (cuda_runtime.h)
+57   949 (cuda_runtime.h)
+58   949 (cuda_runtime.h)
+59   949 (cuda_runtime.h)
+60   949 (cuda_runtime.h)
+61   949 (cuda_runtime.h)
+62   949 (cuda_runtime.h)
+63   949 (cuda_runtime.h)
+64   949 (cuda_runtime.h)
+
+
+EVENT_TYPE
+0    63000019    CUDA kernel
+VALUES
+0   End
+1   Unresolved
+2   _NOT_Found
+3   GetDevice
+4   DeviceSet
+5   main
+6   process_args
+7   vtkfile
+8   cuEquationOfState
+9   cuMakeBoundary
+10   cuHydroGodunov
+11   cuGatherConservativeVars
+12   cuConstoprim
+13   cuSlope
+14   cuTrace
+15   cuQleftright
+16   cuRiemann
+17   cuUpdateConservativeVars
+18   LoopKQEforRows
+19   LoopEOS
+20   LoopKcourant
+21   initDevice
+22   pack_arrayv
+23   unpack_arrayv
+24   Loop1KcuMakeBoundary
+25   cudaLaunch<char>
+26   Loop1KcuConstoprim
+27   Loop1KcuTrace
+28   Loop1KcuQleftright
+29   Loop10KcuRiemann
+30   Loop1KcuCmpflx
+31   Loop1KcuUpdate
+32   pack_arrayh
+33   unpack_arrayh
+34   Loop2KcuMakeBoundary
+35   Loop3KcuUpdate
+
+
+EVENT_TYPE
+0    63000119    CUDA kernel source code line
+VALUES
+0   End
+1   0 (Unresolved)
+2   0 (_NOT_Found)
+3   44 (GetDevice.cu)
+4   88 (GetDevice.cu)
+5   89 (GetDevice.cu)
+6   96 (GetDevice.cu)
+7   102 (GetDevice.cu)
+8   106 (GetDevice.cu)
+9   108 (GetDevice.cu)
+10   119 (GetDevice.cu)
+11   123 (GetDevice.cu)
+12   126 (GetDevice.cu)
+13   99 (cuConservar.cu)
+14   228 (cuConservar.cu)
+15   70 (cuConstoprim.cu)
+16   53 (cuEquationOfState.cu)
+17   316 (cuHydroGodunov.cu)
+18   267 (cuMakeBoundary.cu)
+19   300 (cuMakeBoundary.cu)
+20   306 (cuMakeBoundary.cu)
+21   310 (cuMakeBoundary.cu)
+22   314 (cuMakeBoundary.cu)
+23   318 (cuMakeBoundary.cu)
+24   407 (cuMakeBoundary.cu)
+25   414 (cuMakeBoundary.cu)
+26   419 (cuMakeBoundary.cu)
+27   423 (cuMakeBoundary.cu)
+28   427 (cuMakeBoundary.cu)
+29   49 (cuQleftright.cu)
+30   269 (cuRiemann.cu)
+31   61 (cuSlope.cu)
+32   175 (cuTrace.cu)
+33   42 (main.c)
+34   47 (main.c)
+35   63 (main.c)
+36   81 (main.c)
+37   86 (main.c)
+38   88 (main.c)
+39   129 (main.c)
+40   224 (parametres.c)
+41   225 (parametres.c)
+42   173 (vtkfile.c)
+43   176 (vtkfile.c)
+44   284 (vtkfile.c)
+45   949 (cuda_runtime.h)
+46   949 (cuda_runtime.h)
+47   949 (cuda_runtime.h)
+48   40 (gridfuncs.cu)
+49   949 (cuda_runtime.h)
+50   949 (cuda_runtime.h)
+51   949 (cuda_runtime.h)
+52   949 (cuda_runtime.h)
+53   949 (cuda_runtime.h)
+54   949 (cuda_runtime.h)
+55   949 (cuda_runtime.h)
+56   949 (cuda_runtime.h)
+57   949 (cuda_runtime.h)
+58   949 (cuda_runtime.h)
+59   949 (cuda_runtime.h)
+60   949 (cuda_runtime.h)
+61   949 (cuda_runtime.h)
+62   949 (cuda_runtime.h)
+63   949 (cuda_runtime.h)
+64   949 (cuda_runtime.h)
+
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>4. Analysis with Paraver &amp; Dimemas - Methodology</TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (Linux)">
+	<META NAME="AUTHOR" CONTENT="jesus">
+	<META NAME="CREATED" CONTENT="20030128;21560000">
+	<META NAME="CHANGEDBY" CONTENT="Pedro Gonzalez">
+	<META NAME="CHANGED" CONTENT="20121122;12400700">
+	<META NAME="Información 1" CONTENT="">
+	<META NAME="Información 2" CONTENT="">
+	<META NAME="Información 3" CONTENT="">
+	<META NAME="Información 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 10pt; so-language: zxx }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 10pt; so-language: ar-SA }
+		H1 { margin-bottom: 0.11cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H1.western { font-family: "Arial", sans-serif; font-size: 14pt; so-language: en-US }
+		H1.cjk { font-family: "Times New Roman", serif; font-size: 14pt; so-language: zxx }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA; font-weight: normal }
+		A:link { color: #0000ff }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" TEXT="#000000" LINK="#0000ff" DIR="LTR">
+<H1 LANG="en-US" CLASS="western" ALIGN=CENTER><FONT SIZE=4><B>Analysis
+with Paraver &amp; Dimemas</B></FONT></H1>
+<H1 LANG="en-US" CLASS="western" ALIGN=CENTER>Methodology</H1>
+<H1 LANG="en-US" CLASS="western" STYLE="page-break-after: avoid"></H1>
+<H1 LANG="en-US" CLASS="western" STYLE="page-break-after: avoid"><FONT SIZE=4><B>Objective</B></FONT></H1>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT SIZE=2>The objective of this session  is to present some
+examples of analysis methodology supported by the configuration
+files.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT SIZE=2>This methodology should in the future be automated by
+integrating Paraver and Dimemas with profile presentation tools and
+rule based systems.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western"><FONT SIZE=4><B>Distribution of
+configuration files</B></FONT></H1>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT SIZE=2>An analysis methodology is essentially a tree of
+measurements to perform that lead us to a good understanding of the
+behavior of our application or the identification of bottlenecks. A
+typical search will iterate through successive sets of hypotheses and
+validations down the tree till we understand the behavior or have no
+further information in the available data to validate an hypotheses.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT SIZE=2>The standard Paraver distribution contains a large set
+of directories and configuration files. At the outermost levels,
+directories try to group configurations based on the type  of
+information they look at. Internally we typically separate
+directories for configuration files that that show a specific
+timeline view and directories for configuration files that compute a
+profile or histogram. The major directories are:</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal">
+	<FONT SIZE=2>General:</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal">
+	<FONT SIZE=2>MPI: targeting the measurement of the MPI  behavior.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal">
+	<FONT SIZE=2>OpenMP:</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal">
+	<FONT SIZE=2>...</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal">
+	<FONT SIZE=2>Methodology: this directory tries to group the basic
+	cfgs that should be used as as initial steps of an analysis.</FONT></P>
+</UL>
+<H1 LANG="en-US" CLASS="western"><FONT SIZE=4><B>Methodology: basic
+profiles</B></FONT></H1>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>In this section we will present some recommendations on
+how to proceed in an analysis.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>The first question to address is what is the parallel
+efficiency and whether it is determined/limited by load balance or
+communication.</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Load <A HREF="Iberia-128-CA.chop1.1it.shifted.prv.gz"><B>Iberia-128-CA.chop1.1it.shifted.prv.gz</B></A>
+	and then  <A HREF="../methodology_v02/cfgs/methodology/parallel_efficiency.cfg"><B>cfgs/methodology/parallel_efficiency.cfg</B></A>.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>The entry  “Average” towards the end of the second
+	column tells you how much <B>parallel efficiency</B> you are
+	getting. 100% would be ideal. 90% would mean you are loosing 10% of
+	potential performance.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>The entry “Maximum” in this same column measures
+	<B>communication efficiency</B>, how much of that performance loss
+	is due due to MPI. A value of 100% means that MPI and communication
+	in general is NOT limiting the application performance. a value of
+	90% means that you are loosing 10% because of the communication</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>The value at the end of the second column (Avg/Max)
+	actually measures the degree of global <B>load imbalance</B> in the
+	application. A value of one is perfect load balance. A value of 0.9
+	means you are loosing 10 % of performance with respect to an ideally
+	balanced execution. You can see the distribution of the percentage
+	of useful computation by the different threads in the corresponding
+	entries of this column.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>The parallel efficiency is actually the product of
+	these two factors.</FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>If the application does show some load imbalance, you
+may wonder whether it is computational load imbalance or due to other
+factors.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Load <A HREF="../methodology_v02/cfgs/methodology/instructions_profile.cfg"><B>cfgs/methodology/instructions_profile.cfg</B></A>.
+	The entry  “Avg/Max” at the end of the second column tells you
+	how well is the computational load (number of instructions) balanced
+	across processors. A value of. 1 would represent ideal balance. A
+	value of 0.9 would mean you would be  loosing 10% of potential
+	performance if IPC was uniform across all processes due to
+	computational load imbalance.</FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>An important metric to look at reports the performance
+of the sequential computation phases. If the parallel efficiency is
+good, this may be the limiting factor. If it is not good, imbalances
+in IPC may cause the imbalance in execution time. Sometimes,
+imbalance in IPC may compensate computational load imbalance.</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Load <A HREF="../methodology_v02/cfgs/methodology/IPC_profile.cfg"><B>cfgs/methodology/IPC_profile.cfg</B></A><B>:
+	</B>The second column reports the average IPC achieved by each
+	process in the computation bursts. In powerPC970 case, values above
+	1 are reasonably good.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>The entry “Avg/Max” measures the imbalance in IPC.
+	A value of 1 is ideal. a value of 0.9 would mean you would loose 10%
+	of potential performance if the application was perfectly balanced
+	fro the computational point of view. </FONT>
+	</P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>If the IPC is not good or well balanced, you may want to
+look at cache misses.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>If the communication time seems to be a problem it may
+actually not be due to communication but to local (or microscopic)
+load imbalances or serialization. In order to identify this effect, a
+Dimemas simulation is required. You will need to convert the file to
+.dim, and simulate with an ideal target architecture.</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Load  <B><A HREF="../methodology_v02/cfgs/methodology/parallel_efficiency.cfg">cfgs/methodology/parallel_efficiency.cfg</A>
+	</B><SPAN STYLE="font-weight: normal">on the  trace generated with a
+	the </SPAN><A HREF="Iberia-128-CA.chop1.1it.shifted.ideal.prv.gz"><B>ideal
+	Dimemas simulation</B></A><SPAN STYLE="font-weight: normal">. The 
+	entry “Maximum” in the second column specifies the actual value
+	of Microscopic load balance.</SPAN></FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; font-weight: normal; widows: 2; orphans: 2">
+	<FONT SIZE=2>The actual value of communication efficiency can be
+	computed by dividing the elapsed time of the ideal Dimemas
+	simulation to the elapsed time of the original Paraver trace.</FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western"><FONT SIZE=4><B>Methodology:
+detailed profiles</B></FONT></H1>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>The above metrics are computed for the whole program.
+You may want to have the same metrics for different computational
+phases. You will need to cluster the paraver trace and <A HREF="Iberia-128-CA.chop1.1it.shifted.clustered.prv.gz"><B>load
+it</B></A>.</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Configuration file <A HREF="../methodology_v02/cfgs/methodology/2dp_cid.cfg"><B>cfgs/methodology/2dp_cid.cfg</B></A>
+	will show the same type of information as the parallel-efficiency
+	file, but now each column will represent on of the relevant
+	computation phases of the program (clusters)..</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>If you change the statistic to “Sum Bursts” and the
+	Data Window to Instructions and repeat the analysis you will get the
+	computational load balance for each cluster in the “Avg/Max”
+	entry.</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>If you change the statistic to “Average value” and
+	the Data Window to instructions per cycle, you will get the IPC
+	imbalance for each cluster in the “Avg/Max” entry.</FONT></P>
+</UL>
+<H1 LANG="en-US" CLASS="western"><FONT SIZE=4><B>Methodology:
+histograms</B></FONT></H1>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>If parallel efficiency is bad due to load imbalance and
+you want to know how is that load imbalance distributed and where it
+shows up.</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>Load
+	<B><A HREF="../methodology_v02/cfgs/methodology/computation_duration_histogram.cfg">cfgs/methodology/computation_duration_histogram.cfg</A>:
+	</B><SPAN STYLE="font-weight: normal">Ideally, vertical lines should
+	appear, showing that all processes spend take same time for all
+	computation phases. If you pop up the control window you will see
+	the time distribution. If you are interested on a special range of
+	durations where the histogram shows a wide stripe where the duration
+	of a computation phase is different for different processors you may
+	click on the “Open Control Window Zoom 2D” and select the range
+	of durations and processors you are interested. You will get a
+	timeline for only the range of durations and processors you have
+	selected.</SPAN></FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+ 
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+<FONT SIZE=2>If parallel efficiency is good, you may want to look at
+how the IPC distributes along the different computation phases</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm; widows: 2; orphans: 2">
+	<FONT SIZE=2>You may also load <A HREF="../methodology_v02/cfgs/methodology/IPC_histogram.cfg"><B>cfgs/methodology/IPC_histogram.cfg</B></A><B>
+	</B>This is a histogram of the IPC of the useful computation phases.
+	The reason is that different phases may have different IPCs and may
+	be interesting to identify poorly performing phases even if the
+	average is good. You can pop up the useful_IPC timeline (control
+	window) to see the distribution along time.</FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.42cm; margin-bottom: 0.11cm; font-weight: normal; widows: 2; orphans: 2">
+<BR><BR>
+</P>
+</BODY>
+</HTML>

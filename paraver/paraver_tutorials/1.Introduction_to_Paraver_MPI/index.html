@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>1. Introduction to Analysis with Paraver - MPI</TITLE>
+	<meta name="generator" content="Bluefish 2.2.2" >
+	<meta name="author" content="Pedro Gonzalez" >
+	<META NAME="CREATED" CONTENT="20030128;20560000">
+	<META NAME="CHANGEDBY" CONTENT="Pedro Gonzalez">
+	<META NAME="CHANGED" CONTENT="20121024;12520200">
+	<META NAME="Información 1" CONTENT="">
+	<META NAME="Información 2" CONTENT="">
+	<META NAME="Información 3" CONTENT="">
+	<META NAME="Información 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 10pt }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 10pt; so-language: ar-SA }
+		H1 { margin-bottom: 0.11cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H1.western { font-family: "Arial", sans-serif; font-size: 14pt; so-language: en-US }
+		H1.cjk { font-family: "Times New Roman", serif; font-size: 14pt }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA; font-weight: normal }
+		H2 { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H2.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt; so-language: en-US; font-style: italic }
+		H2.cjk { font-family: "WenQuanYi Micro Hei"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Lohit Hindi"; font-size: 14pt; so-language: ar-SA; font-style: italic }
+		A:link { color: #0000ff }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" TEXT="#000000" LINK="#0000ff" BGCOLOR="#ffffff" DIR="LTR">
+<H1 LANG="en-US" CLASS="western" ALIGN=CENTER>Introduction to Analysis with Paraver</H1>
+<H1 LANG="en-US" CLASS="western" ALIGN=CENTER>MPI</H1>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT></H1>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT></H1>
+<H2 LANG="en-US" CLASS="western" ALIGN=LEFT>Timelines: Navigation and
+Basic concepts</H2>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+Let us go through some basic navigation and analysis functionalities.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 <I>Load trace</I>:  From the main menu, select <I>File → Load
+	Trace...</I>, and select the file
+	<A HREF="Iberia-128-CA.chop1.1it.shifted.prv">Iberia-128-CA.chop1.1it.shifted.prv</A>.</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		After the file is loaded,  from the main menu, select <I>File →
+		Load Configuration...</I>, and select <A HREF="cfgs/mpi_call.cfg">mpi_call.cfg</A>.
+		 A display window will appear with the timeline of which MPI call
+		is being executed at each point in time by each process. The
+		horizontal axis represents time, from the start time of the
+		application at the left of the window to the end time at the right.
+		For every thread, the colors represent the MPI call  or black when
+		doing user level computation outside of MPI.</P>
+
+		 <LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">                                                                                                                         Moving the mouse over the display window you will see at the bottom of the window the 
+                  name of the MPI call (the label correspoding to the pointed color) </P>
+
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 <I>Info Panel</I>: Double clicking anywhere inside the window will open the <I>Info Panel</I> with the textual information of the function value in the selected point. Right click inside the window and select the option <I>Info Panel</I> to hide it.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 <I>Zoom</I>:  Click with the Left Button of the mouse to select
+		the starting time of the zoomed view, drag the mouse over the area
+		of interest, and release the mouse to select the end time of the
+		zoomed view.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 <I>Undo Zoom</I> and <I>Redo Zoom</I> commands are available on
+		the Right Button menu. You can do and undo several levels of
+		zooming.</P>
+	   <LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		You can also zoom a tiny region and see only a subset
+		of threads for a short time lapse. Hold down the "<I>Control</I>” or “<I>CTRL</I>” key on the keyboard, and
+		using the mouse, identify a rectangular area by clicking on top
+		left corner of the desired area with the left mouse button and
+		dragging and releasing the button on the bottom right corner.
+		It's important to keep pressed the “<I>CTRL</I>” key until mouse button is released.
+		After that, <I>Undo Zoom</I> and <I>Redo Zoom</I> will work as expected, navigating all along your zoom history.</P>
+		</li>		
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 The <I>Select Objects...</I> option will let you freeze a subset
+		of threads. This is useful when analyzing runs with many processes
+		and you want to concentrate on a few of them. Right click in the timeline to open
+		the contextual menu, select it and then pick the threads/tasks/apps you want.
+		Keep in mind that this is much more than just a zoom, this is a row selection.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 <I>Flags</I>: Right-click on the window, and select the <I>View
+		→ Event Flags</I> option. Flags appear at the entry and exit points to the MPI calls.
+		Depending on the scale, displaying flags may help differentiate
+		whether there is one or many MPI calls at a given zoom level.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 To measure time between any two points in the trace just hold pressed the Shift key and 
+		 zoom as before (left click and drag the mouse). The time and the
+		interval between the two selected points of the trace is displayed
+		in the <I>Timing</I> tab of the <I>Info Panel</I>.</P>
+	</UL>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	</P>
+</UL>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 Load configuration file <A HREF="cfgs/useful_IPC.cfg">useful_IPC.cfg</A><B>.
+	</B> From the main menu, select <I>File → Load
+	Configuration...</I>, and select the configuration file
+	specified.</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 This configuration file shows a timeline with the instructions per
+		cycle (IPC) achieved by in each interval of useful computation. 
+		Right-click on the window, select <I>Info Panel</I>, and
+		select the <I>Color</I> tab to see the actual coloring scheme
+		and scale for this window. The IPC function of time for each
+		process is represented as a gradient between light green
+		representing a low IPC value and dark blue representing a high IPC
+		value. This view shows  in black in the regions where processes are
+		in MPI in order to let us focus on the actual useful computation
+		parts. 
+		</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 Display as a function of time: Use the <I>Control-Zoom</I> to
+		select a few processes for the whole duration of the trace. Select
+		the <I>Paint as</I> option in the window menu (right click) 
+		and select <I>Function Line</I>. You will see a display of the IPC for the selected
+		processes as a function of time. Both the color and function of
+		time view present the same information. The color scheme is
+		inherently more scalable.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 Textual Display: Click with the Left Button on any point in the
+		window. It will list in textual form the actual value of IPC at the
+		point selected (an vicinity if time scale too coarse).  The text
+		display will be in the <I>What/Where</I> tab of the <I>Info
+		Panel</I>.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		 Y scale: you can change the vertical scale for the function of
+		time representation as well as for the color encoding. To manually
+		control the scale, use the <I>Semantic Maximum</I> and
+		<I>Semantic Minimum</I> fields in the Main Window. Just keep
+		in mind that values outside the specified range will be truncated
+		in the function of time display and will be assigned a different
+		color (orange) in the color display. To automatically fit the scale
+		to the whole dynamic range of the function, inside the window,
+		right-click on the window, and select <I>Fit Semantic Scale →
+		Fit Both</I> (or <I>Fit Maximum</I> or <I>Fit Minimum</I>). 
+		</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+		Synchronize windows: In Paraver every timeline window represents a
+		single metric (MPI call, useful IPC,....) for all selected
+		processes and time span. It is possible to synchronize two
+		timelines by making them display the exact same processes and time
+		span.  For doing so, just right-click and select <I>Copy</I>
+		on the source (reference) window and then on the target window
+		right-click and select <I>Paste → Size</I> and <I>Paste
+		→ Time</I>. Both windows will then be of the same size and 
+		represent different views (metrics) for the same part of the trace.
+		If you put one above the other there is a one to one correspondence
+		between points in vertical. The <I>Paste Time</I><B>
+		</B>lets you copy only the time scale from the first window to the
+		target one.  The <I>Paste Default Special</I> is a shortcut for copying size, 
+                 time and objects (threads). The <I>Paste Semantic Scale</I><B> </B>lets you
+		apply to the target window the same vertical scale the source
+		window had. </P>
+	</UL>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	Load the configuration <A HREF="cfgs/L2missratio.cfg">L2missratio.cfg</A><B>.
+	</B>This configuration file shows a timeline with the L2 cache miss
+	ratio (L2 cache misses per 1000 instructions) in each interval
+	between MPI events. You can observe that the L2 cache miss ratio is
+	higher in the communication phases than in the long computation
+	phases. The red triangle in the lower left corner warns that the Y
+	scale is not enough to display the whole dynamic range of L2 cache
+	miss ratios. This reflects in some areas appearing as orange (above
+	the  Semantic Minimum value). You can automatically set the Semantic
+	Minimum and Maximum values to have a linear gradient display for the
+	whole range by right-clicking and selecting <I>Fit Semantic Scale
+	→ Fit Both</I>. In this case the original semantic scale does
+	show the difference between the computation phases. You can go back
+	by manually changing the <I>Semantic Maximum</I> value in the
+	Main Window to 0.5.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 Load <A HREF="cfgs/useful_duration.cfg">useful_duration.cfg</A><B>.
+	</B>This configuration file shows a timeline where the color
+	represents the duration of a computation burst between an exit from
+	MPI and the next entry.  The function is valued to 0 (black) in the
+	regions where processes are in MPI. This view gives a good
+	perception of where are the major computation phases, and their
+	balance across processors.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 Load <A HREF="cfgs/p2p_size.cfg">p2p_size.cfg</A> to see the
+	message sizes for each message sent along the time axis.</P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+<BR>
+</P>
+<H2 LANG="en-US" CLASS="western" ALIGN=LEFT>Profiles</H2>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+The above analysis went directly to the detailed timeline, but a less
+detailed averaged statistic can often be sufficient to identify
+problems and gives a summarized view of the behavior of an
+application. Paraver provides one mechanism to obtain such profiles
+for the desired region of a trace. We call it the <I>2D Analyzer</I>
+as it is a very flexible mechanism to generate tables of summarized
+statistics.  Let's use it:</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	Load configuration file <A HREF="cfgs/mpi_stats.cfg">mpi_stats.cfg</A>.
+	A table pops up with one row per thread and one column per MPI call.
+	The first column corresponds to the time outside MPI. Each entry in
+	the table tells the percentage of time the corresponding thread has
+	been inside the specific call.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	  The table shows the global perception of the profile for all MPI calls and
+	processes. Click on the magnifying glass <IMG SRC="index_html_5f7109d5.png" NAME="gráficos2" ALIGN=LEFT WIDTH=27 HEIGHT=25 BORDER=0> at the top of the icons
+	column on the right of the window to see the numerical values. You can switch between numerical and zoomed out display by clicking again on the icon.</P>
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	To see a different statistic change the <I>Statistic selector</I> in
+	the Main Window (expand the <I>Statistics</I> section in the
+	<I>Window Properties</I>, if necessary). Interesting options
+	at this time may be:</P>
+	<UL>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+		<I>Time</I>: to get the accumulated   time each process has spent
+		in each MPI call.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+		<I>#Bursts</I>: To count the number of invocations to each call.</P>
+		<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+		<I>Average Burst Time</I>: to compute the average duration of the
+		call.</P>
+		<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+		</P>
+	</UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 <IMG SRC="index_html_m3cb859f7.png" NAME="gráficos1" ALIGN=LEFT WIDTH=20 HEIGHT=23 BORDER=0>
+	   All the above statistics are computed based on a single timeline
+	window, which we call the <B>C</B><I>ontrol Window</I> and
+	which can be popped up by clicking on the control window icon in the
+	top left corner of the window. In this example, you will see that it
+	is the same MPI call view we had loaded before. The values of
+	the control window determine to which column is a given statistic
+	accumulated/accounted.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	The statistic inside a cell can actually be performed on a different
+	window, that we call the <B>D</B><I>ata Window</I>. For
+	example, if you select the <I>Average Value</I>
+	statistic and you select as the data window the Instructions per
+	cycle window we loaded before, the entry will report the average
+	IPC within the specific MPI call.  To change the Data Window, expand
+	the <I>Data</I> section (if necessary) in the Main Window, and
+	change the <I>Window</I> value by clicking on the value and
+	selecting a window.  Change it back to the MPI Call window and
+	to the %Time statistic.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	To apply the analysis to a subset of the trace, zoom on any of the
+	timelines to the time region you are interested on.  Right-click and
+	select <I>Copy</I> on this window and right-click and select
+	<I>Paste → Time</I> on the table. The analysis will be
+	repeated just for the selected time interval.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	If you want to focus only on the actual MPI call columns (discarding
+	the first column)  change the <I>Control: Minimum</I> on the
+	Main Window. If the whole table appears as green, you can rescale
+	the gradient coloring scheme by right-clicking in the window and
+	selecting <I>Autofit Data Gradient</I>.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	Load <A HREF="cfgs/2dp_MPIcallerLine.cfg">2dp_MPIcallerLine.cfg</A>.
+	This profile shows one column per source line from where an MPI call
+	is made. It shows the average duration of the calls from that line.
+	You can change the statistic to <I>% Time</I> to see the percentage
+	of time spent at each calling line or to <I># Bursts</I> to see how
+	many calls from that line were made.</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	You can change the statistic to <I>Average Value</I> and then
+	select the p2p size view as <I>Data</I> Window. You will see which 
+         lines sent larger messages (the data
+	window only reports the size of point to point messages).</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	You can click on the Open Control Window icon on the top left
+	corner of the Profile Window to show a time line of from where was
+	MPI called. Right-click and use the <I>Info Panel</I> view to
+	see the coloring encoding (on the <I>Colors</I> tab).</P>
+	<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+	 <IMG SRC="index_html_126e2503.png" NAME="gráficos3" ALIGN=LEFT WIDTH=25 HEIGHT=24 BORDER=0>
+	  You can click on the <I>Open Filtered Control Window</I>
+	icon from the top of the Profile Window, and then left-click and
+	drag to select one or more columns in the 2D table. A timeline will
+	be created showing when in time the different processes called MPI
+	from that specific line. 
+	</P>
+</UL>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT></H1>
+<H2 LANG="en-US" CLASS="western" ALIGN=LEFT>Histograms</H2>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm">
+The same mechanism used to compute profiles can be used to compute
+histograms. To get a histogram of  continuous valued metrics:</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 Load configuration file <A HREF="cfgs/2dh_useful_duration.cfg">2dh_useful_duration.cfg</A>.
+	A table pops up with one row per thread. The X axis represents bins
+	of a histogram. In this case, every pixel represents a bin of 2000
+	microseconds (<I>Delta</I> value in the <I>Control</I>
+	section of the Main Window). The pixels at the left of the table
+	represent short durations, those at the right represent 
+	large duration. Every pixel is colored with the percentage of time
+	that process spent in a computation phase of the length
+	corresponding to the pixel column. The color encoding is light green
+	for a low percentage, dark blue for a high percentage (low and high
+	are defined by the Minimum and Maximum values in the “Control”
+	section of the Main Window). The pixel is colored in grey when there is
+        no value in the corresponding range</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 Ideally on a balanced SPMD application you would expect vertical
+	lines, representing the different computation bursts are of exactly
+	the same duration for all processes. You can see that in this
+	example theres is a certain variance between processors (vertical
+	bands rather than lines).</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 If you move the cursor over the colored pixels, the bottom of the
+	window will show the actual range represented by the column of the
+	pixel and the actual value (percentage in this case) for that pixel.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 If you want to see the numerical values of the table click on the
+	magnifying glass at the top of the column of icons at the right of
+	the window. You will see the individual columns, for each of the the
+	range of durations it represents is show at the top.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 It is possible to change the statistic so that the actual value
+	represented is total time, average duration of the bursts or average
+	value of other metric (such as “IPC”). For example, in the
+	<I>Statistics</I> section of the Main Window, you can change
+	the statistic selector to <I>Average value</I> and select
+	<I>Instructions Per Cycle</I> as the data window. You can
+	change the range of the coloring scheme in the <I>Statistics: Minimum Gradient
+	</I>and <I>Statistics: Maximum  Gradient</I> fields in the Main Window. 
+        For example, if you put a 0.7
+	in the <I>Statistics: Minimum Gradient</I> field in the Main Window,
+	you will be able to clearly differentiate regions with less than
+	that IPC (light orange), regions just above 0.7 IPC (light green)
+	and regions close to the Max IPC (dark blue, 0.9 in this case). This
+	mechanism is very useful to analyze correlations between metrics.
+	You will directly get this view by loading <A HREF="cfgs/2dc_ud_ipc.cfg">2dc_ud_ipc.cfg</A>.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 The histogram on instructions correlated to cache misses can be
+	seen by loading <A HREF="cfgs/2dc_I_L2mr.cfg">2dc_I_L2mr.cfg</A>.
+	In this histogram of instructions  (columns now represent bins of
+	number  of instructions executed in a computation burst between MPI
+	calls). You can see that there are also some vertical bands
+	indicating that there is actually computational load imbalance.
+	Curiously,  the vertical bands are not equally separated in the
+	instruction histogram and the duration histogram, corresponding to
+	variations in IPC.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	 If you load  <A HREF="cfgs/3dh_msgsize_p2pcall.cfg">3dh_msgsize_p2pcall.cfg</A><B>,
+	</B>the histogram is now of the message size in point to point
+	calls. This window actually shows the histogram for a specific MPI
+	call, MPI_Isend in this case as shown at the <I>3D</I> section
+	of the Main Window. The Statistic (color) represented is the number
+	of messages of that size sent. You can see that there are more small
+	than large messages.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	You can change the <I>Plane</I> selector in the <I>3D</I>
+	section of the Main Window to see the histogram of message sizes for
+	a different MPI call.</P>
+</UL>
+</BODY>
+</HTML>

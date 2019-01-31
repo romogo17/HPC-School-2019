@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+	<TITLE>6. Paraver trace preparation</TITLE>
+	<meta name="generator" content="Bluefish 2.2.2" >
+	<meta name="author" content="Pedro Gonzalez" >
+	<META NAME="CREATED" CONTENT="20030128;21560000">
+	<META NAME="CHANGEDBY" CONTENT="Pedro Gonzalez">
+	<META NAME="CHANGED" CONTENT="20121120;14264600">
+	<META NAME="Información 1" CONTENT="">
+	<META NAME="Información 2" CONTENT="">
+	<META NAME="Información 3" CONTENT="">
+	<META NAME="Información 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-left: 2cm; margin-right: 3cm; margin-top: 2.5cm; margin-bottom: 2.5cm }
+		H1 { margin-top: 0.85cm; margin-bottom: 0cm; direction: ltr; color: #365f91; line-height: 115%; text-align: left; widows: 
+2; orphans: 2 }
+		H1.western { font-family: "Cambria", serif; font-size: 14pt; so-language: en-US }
+		H1.cjk { font-family: "Albany AMT", "Arial"; font-size: 14pt; so-language: zxx }
+		H1.ctl { font-family: "Arial Unicode MS", serif; font-size: 14pt; so-language: ar-SA }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 115%; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: "Calibri", sans-serif; font-size: 11pt; so-language: en-US }
+		P.cjk { font-family: "Albany AMT", "Arial"; font-size: 11pt; so-language: zxx }
+		P.ctl { font-family: "Arial Unicode MS", serif; font-size: 11pt; so-language: ar-SA }
+		H2 { margin-top: 0.35cm; margin-bottom: 0cm; direction: ltr; color: #4f81bd; line-height: 115%; text-align: left; widows: 
+2; orphans: 2 }
+		H2.western { font-family: "Cambria", serif; font-size: 13pt; so-language: en-US }
+		H2.cjk { font-family: "Albany AMT", "Arial"; font-size: 13pt; so-language: zxx }
+		H2.ctl { font-family: "Arial Unicode MS", serif; font-size: 13pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" TEXT="#000000" LINK="#0000ff" BGCOLOR="#ffffff" DIR="LTR">
+
+<H1 LANG="en-US" CLASS="western" ALIGN=CENTER>Analysis with Paraver - Preparation of trace</H1>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<H2 LANG="en-US" CLASS="western">Objective</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The objective of this session is to describe how to obtain from an
+initial trace a new trace representing a relevant region of a program
+run and more appropriate for detailed analysis.</P>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The methodology can be applied to very large traces that would
+otherwise be impossible to handle by wxparaver.</P>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Besides dealing with the scalability problem of trace based systems
+it is also useful to select a proper region for performing an
+analysis. For example it can be used to exclude from a trace (and
+thus the statistics) initialization regions or other perturbed
+regions.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<H2 LANG="en-US" CLASS="western">Material</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The methodology explained is generally to be applied to traces of
+hundreds of MBs or GBs. In this case we are not distributing the
+original trace but we include some intermediate traces in the process
+and some configuration files.</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	WRF-BSC.ARW.PI.128.HWC_FULL.bursts.gnuplot: Example file generated  
+	by the initial statistics generation functionality in the paraver
+	loading module. 
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	./xml/filter_useful.xml: a file needed by Paraver to specify how to
+	filter very large traces in order to generate traces that represent
+	the full duration of the run but contain a subset of the original
+	information.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	WRF-BSC.ARW.PI.128.HWC_FULL.filter1.prv.gz: The result of applying the
+	filtering process to a huge trace (not provided for
+	space reasons). The original trace represented the execution of the
+	WRF weather modeling application on 128 processors simulating a
+	region of the Iberian Peninsula. 
+	</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	Useful_duration.cfg: A Paraver configuration file used to indentify
+	structure in the filtered trace.</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-top: 0.21cm; margin-bottom: 0cm">
+	WRF-BSC.ARW.PI.128.HWC_FULL.chop1.prv.gz: An example trace obtained
+	through the process described in this document.</P>
+</UL>
+
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<H2 LANG="en-US" CLASS="western">First approach to a huge trace</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+When loading a trace file larger than a maximum size (limit set in the
+<A HREF="init_preferences"><i>Preferences window</i></A> -> <em>Global</em>
+section -> <i>Trace</i> box)
+wxparaver asks whether to shrink it to a filtered trace,
+containing only a subset of the records of the original one, but with enough information
+to perform initial analyses.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<div style="text-align: center"><img src="img/Reduce%20trace%20size_001.png" ALIGN=CENTER alt="" /></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure 1: Trace size warning window</I></FONT></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+If you answer <i>No</i> you're telling wxparaver to try to load it entirely;
+be careful, sometimes it's feasable, but not always.
+Even though you'll be able to later stop the loading and sight what's in the beginning of your trace,
+that probably wouldn't be useful at all. 
+If you answer <i>Yes</i>, the <i>Cut & Filter</i> dialog (fig. 2) is shown.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<div style="text-align: center"><img src="img/Cut%20&%20Filter_004.png" ALIGN=CENTER alt="" /></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure 2: Cut / Filter dialog</I></FONT></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+With this window
+you'll be able to access and run some trace utilities useful to
+perform this size reduction (explained in Step 2).
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The main purpose of this tutorial is to
+guide you through a <b>three step methodology</b> that will be appropriate
+for most of the analyses. Of course, variations of the general
+methodology can be used for specific needs or purposes. The essential
+observation behind this methodology is that the most important
+information in a trace relates to its <b>computation bursts</b>. 
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Before going on, cancel and close all your windows but the main one.
+</P>
+
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+
+<H2 LANG="en-US" CLASS="western">Step 1: Bursts Statistics</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Click the gear wheel icon <img src="img/gear.png" width="28" height="29" alt="" />
+in the main window to open the <i>Run Application</i> dialog.
+Select the <i>Stats</i> application, choose the trace
+(the name of your trace will be fed automatically if you come from the
+previous <i>Reduce traze size</i> warning - fig 1. - and then you clicked the <i>Yes</i> button).
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+We recommend to focus on obtaining basic statistics only for computation
+bursts (click the <i>Generate bursts histogram</i> checkbox).
+Finally click <i>Run</i> button.
+wxparaver will scan the original trace and generate a gnuplot file
+shown as an html link in the log textbox (fig. 3).
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<div style="text-align: center"><img src="img/Run%20Application_001.png" ALIGN=CENTER alt="" /></div>
+</P>
+
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.21cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure 3: Parametrization of Stats in Run Application dialog</I></FONT></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+If you click the link, gnuplot's started automatically (see   
+<A HREF="init_command:gnuplot%20-p%20WRF-BSC.ARW.PI.128.HWC_FULL.bursts.gnuplot">WRF-BSC.ARW.PI.128.HWC_FULL.bursts.gnuplot</A>
+, also provided as material).
+Two histograms are shown on the same plot (fig. 4). The green bars
+are the total amount of time incurred by computation bursts of the
+different durations. In the figure, 45% of the total time is spent in
+bursts of length between 500 ms and 1 second.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; page-break-after: avoid">
+<div style="text-align: center"><IMG SRC="img/gnuplot.png" NAME="gráficos1" ALIGN=CENTER BORDER=0></div>
+</P>
+
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.21cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure 4: Histogram of computation records</I></FONT></div>
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The red line shows the total amount of bursts of a given duration. In
+the figure, more than 90% of the bursts are between 10 and 50
+microseconds.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+From the two histograms we can infer a duration such that the total
+number of computation records above such duration is small and they
+represent a large part of the total computation time. This number can
+be fed onto the .xml file used in the next step.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Very often, durations of several milliseconds or tenths of
+milliseconds are good choices for this parameter.
+</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<H2 LANG="en-US" CLASS="western">Step 2: Filtering the trace</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+As seen before, when trying to load a huge file choose <i>Yes</i> in
+<i>Reduce size</i> dialog (fig. 1) to open <i>Cut/Filter</i> dialog (fig. 2), or 
+open it directly clicking the scissors icon <img src="img/scissors.png" width="28" height="28" alt="" /> in the main window.
+Browse for file xml/filter_useful.xml. It codes the parametrization of the cut/filter utilities.
+This parametrization can be modified, saved and recovered later (see <i>Save...</i> button)
+</P>
+
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Paraver will scan the original trace
+and generate a new one named after the original plus a ".filter#.prv"
+extension. As directed by filter_useful.xml, this file will essentially
+contain computation burst longer than 5*10<sup>6</sup> ns.</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The file WRF-BSC.ARW.PI.128.HWC_FULL.filter1.prv.gz provided as
+accompanying material is the result of applying the filtering process
+to a trace of 20 GB.
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Load <a href="WRF-BSC.ARW.PI.128.HWC_FULL.filter1.prv.gz">WRF-BSC.ARW.PI.128.HWC_FULL.filter1.prv.gz</a> and configuration file
+<a href="cfgs/useful_duration.cfg">useful_duration.cfg</a>.
+The view represents the whole duration of the original trace (a bit over 290 seconds in this case).
+The pattern that appears is fairly typical of many applications, with
+an initialization phase and then entering into an iterative behavior.
+Zooming into the area on the right half of the screen (click and drag)
+and fitting the semantic scale  to adjust colors (right click to open the pop-up menu,
+<i>Fit Semantic Scale</i> -> <i>Fit Both</i>),
+we'll be able to see the iterative structure of the program (fig. 5).</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; page-break-after: avoid">
+<div style="text-align: center"><img src="img/Useful_Duration.png" width="602" height="163" alt="" /></div>
+</P>
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.21cm"><A NAME="_Ref216703981"></A>
+<div style="text-align: center"><FONT SIZE=3><I>Figure 5: Useful duration view for the whole filtered trace</I></FONT>
+</div>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Recall that there are no MPI events in this trace. Loading the
+<a href="cfgs/MPI_call.cfg">MPI_call.cfg</a> configuration will not show any MPI information. There
+are no communication records either, so don't expect to see any
+communication line. Although there's no detail on MPI, it's
+nevertheless true it's possible to identify communication phases.
+These will show up as black areas in the “Useful Duration” view.
+A typical pattern in communication phases is several MPI calls
+separated by very short computation bursts. By the filtering process
+above described all these records are discarded. The useful duration
+view only reports the duration of the useful computation areas so its
+value is zero for all areas corresponding to MPI calls and small
+computations in between.</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+If you look at the <a href="xml/filter_useful.xml">filter_useful.xml</a> file, you will see that besides
+letting through states (computation bursts) longer than 5000000 ns
+base of the description in this and the next section, certain event
+types are also passed to the generated file. If you look at the
+WRF-BSC.ARW.PI.128.HWC_FULL.filter1.pcf file (a copy of the pcf of
+the original trace) you can see the specific meaning of some of them.
+For example event type 40000003 identify when a process is flushing
+its memory trace buffer to disk. Events from 3000 to 3002 contain
+information about where (node, line card,…) each process is
+executed within the MareNostrum platform (these events may not be
+generated on other platforms). The standard <a href="cfgs/flushing.cfg">flushing.cfg</a>  or cfgs
+related to process mapping cfgs can be used on the filtered trace.</P>
+
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+
+<H2 LANG="en-US" CLASS="western">Step 3: Extraction of  representative subtrace</H2>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Zooming and navigating in the area that corresponds to the iterative
+computation structure we can actually identify clean iterative
+regions (fig. 6) and regions perturbed for example by preemptions
+(fig. 7).
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=center STYLE="margin-bottom: 0cm; page-break-after: avoid">
+<div style="text-align: center"><img src="img/iterative.png" ALIGN=CENTER width="602" height="163" alt="" /></div>
+</P>
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.21cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure 6: Iterative timeline structure. Dark blue
+represents a long computation phase. Light green regions with short
+computation bursts</I></FONT></div>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=center STYLE="margin-bottom: 0cm; page-break-after: avoid">
+<div style="text-align: center"><img src="img/preemption.png" ALIGN=CENTER width="602" height="163" alt="" /></div>
+</P>
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.21cm">
+<div style="text-align: center"><FONT SIZE=3><I>Figure
+7: Region with perturbation. Communication phases (black) longer than
+average and their propagation</I></FONT></div>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+As final step we should identify a few iterations in a clean region
+(i.e. fig. 6) and obtain a cut of the original trace just
+representing the selected iterations. To do so, the easiest way
+is to right click on the timeline and select <i>Run</i> -> <i>Cutter</i>. The recommended
+“Trace Options” are set by default: don't use the original time, don't break states
+don't remove first state and remove last state.
+Then click on <i>Apply</i> button.
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Another way is
+to invoke the Cut & Filter dialog with the scissors icon,
+browse for the input trace to cut,
+select "Cutter",
+preset the previous "Trace Options" and then
+click in the <i>Select Region...</i> button.
+You'll see the mouse icon changes to a crosshair icon.
+Then go back to the timeline, and drag and drop or click begin and end of
+the region to cut. Both times will be set as begin and end time limits. 
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+Cutting can be done indicating the selected area on any window. Our
+recommended process is nevertheless to use a view of “Useful
+duration” and to select the lower and upper limits on the dark blue
+regions, clicking in the middle of the longest computation phases.
+The selection of lower and upper limit are made at the same point in
+time for all processes. By targeting long computation regions we make
+easy to point for all processes halfway through the same
+computational phase. The selected option not to “Remove First 
+State” actually  drives wxparaver to include the whole state at each
+process instead of cutting it. The option “Remove Last State”
+drives wxaraver to discard the whole state at the right limit. In this
+way it is possible to extract whole iterations even if there is some
+skew or imbalance between processors.</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The option not to “Use original time” shifts the cut thus
+obtained to start at time zero.</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+The resulting trace will include all the MPI events, communication
+records and hardware counter events for the selected area. Detailed
+analyses can thus be performed on it.
+</P>
+
+</BODY>
+</HTML>

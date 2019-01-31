@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <TITLE>2. Introduction to the Use of Dimemas</TITLE>
+    <meta name="generator" content="Bluefish 2.2.4" >
+    <meta name="author" content="Juan Gonzalez" >
+    <meta name="CREATED" content="20030128;20560000">
+    <meta name="CHANGEDBY" content="Juan Gonzalez">
+    <meta name="CHANGED" content="20121122;18035800">
+    <style type="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 10pt; so-language: zxx }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 10pt; so-language: ar-SA }
+		TD P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		TD P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		TD P.cjk { font-family: "Times New Roman", serif; font-size: 10pt; so-language: zxx }
+		TD P.ctl { font-family: "Times New Roman", serif; font-size: 10pt; so-language: ar-SA }
+		H1 { margin-bottom: 0.11cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H1.western { font-family: sans-serif; font-size: 14pt; so-language: en-US }
+		H1.cjk { font-family: "Times New Roman", serif; font-size: 14pt; so-language: zxx }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA; font-weight: normal }
+		H3 { margin-bottom: 0.11cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H3.western { font-family: sans-serif; font-size: 12pt; so-language: en-US }
+		H3.cjk { font-family: "Times New Roman", serif; font-size: 13pt; so-language: zxx }
+		H3.ctl { font-family: "Arial", sans-serif; font-size: 13pt; so-language: ar-SA }
+		H2 { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		H2.western { font-family: sans-serif; font-size: 14pt; so-language: en-US; font-style: italic }
+		H2.cjk { font-family: "Albany AMT", "Arial"; font-size: 14pt; so-language: zxx; font-style: italic }
+		H2.ctl { font-family: "Albany AMT", "Arial"; font-size: 14pt; so-language: ar-SA; font-style: italic }
+		A:link { color: #0000ff }
+	-->
+	</style>
+  </head>
+  <body dir="LTR" style="    color: black;" link="#0000ff">
+    <h1>Introduction to the Use of Dimemas</h1>
+    <h2>Tutorial material</h2>
+    <p>This tutorial contains an example and guidelines to get started on the
+      use of Dimemas. In the directory where it is located you can find:</p>
+    <ul>
+      <li>
+        <p> A Paraver trace <font face="monospace">Iberia-128-CA.chop1.1it.shifted.prv</font>
+          for a 128 processor run of the WRF application. The traces was
+          obtained on MareNostrum with Extrae, using the <font face="monospace">LD_PRELOAD</font>
+          mechanism to intercept entries and exits to MPI. The trace contains
+          events on entry and exit to the MPI calls and hardware counter (cache
+          misses, instructions and cycles) events at these points.</p>
+      </li>
+      <li>
+        <p>Its corresponding <i>.pcf</i> file with the symbolic information for
+          the numerically encoded records in the trace.</p>
+      </li>
+      <li>
+        <p>A directory <font face="monospace">./cfgs</font> with some paraver
+          configuration files that will be used during the analysis of the
+          traces obtained in this session.</p>
+      </li>
+      <li>
+        <p>Four initial Dimemas configuration files named <font face="monospace">MN.128.{1,2,4,8}ppn.cfg</font></p>
+      </li>
+      <li>
+        <p>A directory <font face="monospace">./full_session.1ppn</font> with
+          all the derived Dimemas configuration files and its simulation outputs
+          for the 1-processor-per-node configuration. We recommended to
+          initially ignore its content and follow the tutorial to get acquainted
+          with Dimemas and DimemasGUI.</p>
+      </li>
+    </ul>
+    <h2>Objective</h2>
+    <p>We provide a Paraver trace file describing an actual run (one iteration)
+      of the WRF code in MareNostrum2 supercomputer. Our objective is to perform
+      several Dimemas simulations to identify the sensitivity of the application
+      performance to interconnect parameters.</p>
+    <p>A first step would be to model with Dimemas the actual MareNostrum2
+      configuration and check whether the prediction matches the actual
+      behavior. Then we can proceed to study the potential benefit of
+      hypothetical changes in the architecture.</p>
+    <h2>Generating a Dimemas trace and performing a simulation</h2>
+    <p>The first step is to convert the Paraver trace into a Dimemas file using
+      <font face="monospace">prv2dim</font>. To do so, execute the following
+      command in a terminal window:</p>
+    <table width="80%">
+      <colgroup><col> </colgroup>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 10" valign="MIDDLE" bgcolor="Lavender">
+            <font face="monospace">&gt; $(DIMEMAS_HOME)/bin/prv2dim
+              Iberia-128-CA.chop1.1it.shifted.prv
+              Iberia-128-CA.chop1.1it.shifted.dim</font> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The Dimemas configuration file&nbsp;<font face="monospace">
+        MN.128.1ppn.cfg&nbsp;</font> included in the tutorial directory
+      describes an architecture model idealized from MareNostrum2
+      interconnection network (8 us latency, 250 MB/s but no contention in the
+      network) with only one process per node. Run the following the command in
+      a terminal window:</p>
+    <table width="80%">
+      <colgroup><col> </colgroup>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 10" valign="MIDDLE" bgcolor="Lavender">
+            <font face="monospace">&gt; $(DIMEMAS_HOME)/bin/Dimemas -S 32K -p
+              prediction.1ppn.prv MN.128.1ppn.cfg</font> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>In a few seconds you should get the <span style="font-family: monospace;">prediction.1ppn.prv</span>
+      Paraver trace trace which is a reconstruction of what would have been the
+      behavior on the machine modeled by the <font face="monospace">MN.128.1ppn.cfg</font>
+      file.</p>
+    <p>We can now load the <a href="Iberia-128-CA.chop1.1it.shifted.prv">original
+        trace</a> (<font face="monospace">Iberia-128-CA.chop1.1it.shifted.prv</font>)<font
+        face="monospace"> </font>in Paraver and the <font face="monospace"><a
+          href="cfgs/mpi_call.cfg">cfgs/mpi_call.cfg</a></font>. We can do the
+      same thing with the <a href="prediction.1ppn.prv">predicted trace</a> (<span
+        style="font-family: monospace;">prediction.1ppn.prv</span>). Also load <font
+        face="monospace"><a href="cfgs/mpi_call.cfg">cfgs/mpi_call.cfg</a></font>)
+      with this second trace. In order to ensure that both windows are at the
+      same timescale, we should copy it from the original to the synthetic trace
+      (right click in the original trace timeline window, select <i>"Copy",</i>
+      and then move to the timeline of the synthetic trace and do <i>"Paste
+        Size"</i> and <i>"Paste Time"</i>). We can see that the prediction of
+      Dimemas is slightly optimistic, but quite close to the reality.</p>
+    <h2>Changing the machine model</h2>
+    <p>Let us assume that we are interested in finding out what would be the
+      impact of a slower network (i.e. only 10 MB/s). We should use the Dimemas
+      GUI to tune the <i>cfg</i> file. First load the GUI executing following
+      command in your terminal:</p>
+    <table width="80%">
+      <colgroup><col> </colgroup>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 10" valign="MIDDLE" bgcolor="Lavender">
+            <font face="monospace">&gt; $(DIMEMAS_HOME)/bin/DimemasGUI</font> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Once the it has load, follow the next sequence of action:</p>
+    <ol>
+      <li>
+        <p> <i>"Configuration"</i> → <i>"Load configuration"</i> and select
+          the file <font face="monospace">MN.128.1ppn.cfg</font></p>
+      </li>
+      <li>
+        <p><i>"Configuration"</i> → <i>"Target configuration"</i>. Click on the
+          <i>"Config"</i> button by the "<i>Environment information"</i> to
+          change the <em>"Network Bandwidth"</em> to 10.0 MB/s (please
+          introduce the trailing dot and zero characters). Then click <i>"Save".</i></p>
+      </li>
+      <li>
+        <p><i>"Configuration"</i> → <i>"Save configuration"</i> to a file (e.g.
+          <font face="monospace">MN.128.1ppn.10MBps.cfg</font>)</p>
+      </li>
+    </ol>
+    <p>Perform the Dimemas simulation specifying a name for the output Paraver
+      file and the just saved Dimemas configuration file:</p>
+    <table width="80%">
+      <colgroup><col> </colgroup>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid black; padding: 10" valign="MIDDLE" bgcolor="Lavender">
+            <font face="monospace">&gt; $(DIMEMAS_HOME)/bin/Dimemas -S 32K -p
+              prediction.1ppn.10MBs.prv MN.128.1ppn.10MBps.cfg</font> </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Now, load this simulated Paraver trace, load the <font face="monospace"><a href="cfgs/mpi_call.cfg">cfgs/mpi_call.cfg</a></font>
+      on it and copy its timescale to the other two traces we had already
+      loaded. We can see that although the reduction in bandwidth was very
+      significant (divided by 25), the actual impact on performance was not huge
+      (just 15%)</p>
+    <p>We may thus wonder what would be the impact of reducing bandwidth
+      further. Let us say to just 5 MB/s. You can repeat this process generating
+      a new configuration file with this modification in the interconnection
+      network bandwidth. Now the impact starts to be larger. It is also apparent
+      that the impact is not the same in all phases of the time-line. you can
+      load the <font face="monospace"><a href="cfgs/p2p_size.cfg">cfgs/p2p_size.cfg</a></font>
+      configuration and it will be apparent that the communication phases that
+      are more sensitive to the bandwidth are those with larger messages as one
+      would expect. In general, the actual impact of a reduction in bandwidth
+      will depend on the computational granularity of the application, the
+      message sizes, but also on the level of load balance and the actual use of
+      asynchronous communications within the application or its tolerance to
+      shifts in process pipelining.</p>
+    <h3>- What is the impact of the latency?</h3>
+    <p> You may start from the original <font face="monospace">MN.128.1ppn.cfg</font>
+      description. Come back to the Dimemas GUI, load the configuration file
+      asdo the following steps:</p>
+    <ol>
+      <li>
+        <p><i>“Configuration" </i><i>→ "Target configuration”</i>. Push the <i>"Config"</i>
+          button by the <i>"Node information</i>" label.</p>
+      </li>
+      <li>
+        <p>Change the <i>"Startup"</i> value under the "<em>Inter-node
+            communication parameters</em>" section and set it for example to
+          0.0001, to model a 100 us latency.</p>
+      </li>
+      <li>
+        <p> After changing it click on the <i>"Do all the same"</i> button to
+          apply the new latency to all nodes (you could actually specify
+          different latencies for different nodes, the node number's showed up
+          at the top of this window).</p>
+      </li>
+      <li>
+        <p> <i>"Save"</i> the specified latencies (startups). In Dimemas terms,
+          latency is not end to end but actually represents the local overhead
+          an MPI implementation has. It is assumed to use the CPU and after it,
+          data transfer can start.</p>
+      </li>
+      <li>
+        <p> Create a new Dimemas configuration file (again <span style="font-style: italic;">"Configuration"</span>
+          → <span style="font-style: italic;">"Save configuration"</span>) and
+          perform the simulation (executing the simulator in the terminal
+          window).</p>
+      </li>
+    </ol>
+    <p>If you load the resulting trace in Paraver, you can see that the
+      performance impact of such bad latency is negligible for this trace.</p>
+    <h3>- Would I benefit from multi-rail adapters?</h3>
+    <p> Start from the configuration of 5 MB/s. Go back to the Dimemas GUI. In
+      the <i>"Node information"</i> window change the <i>"Input links"</i> and
+      "<em>Output links</em>" under the "<em>Inter-node communications
+        parameters</em>" section to 2. Save the configuration file and simulate.</p>
+    <p> You can see a certain potential gain by this configuration. One might
+      also study increasing the input links but not the output links. Although
+      not a foreseeable feature of future architectures, this structure can give
+      insight on the structure of the application. For example if one region of
+      an application shows an improvement in this situation, it means that there
+      is significant end point contention. One would probably suggest to the
+      application developer to restructure the schedule of communications so
+      that not all processes send to the same processes at the same time, a
+      frequently disregarded problem in many codes.</p>
+    <h3>- What is the impact of contention?</h3>
+    <p> Starting again from the original machine description you can wonder
+      whether contention caused by bad routing can hurt the performance. One way
+      of modeling this at a very abstract level is to change the <i>"Number of
+        buses"</i> parameter in the "<i>Environment information"</i> window. The
+      number you put in this field is the maximum number of possible concurrent
+      transfers (except that a 0 means no limit on the number of concurrent
+      communications). A value of 1 would mean the network topology would be a
+      bus, with only one possible transfer at any time. You can vary this
+      parameter and see how sensitive is the application to contention. In our
+      case, the application still performs well with a very small number of
+      concurrent transfers (i.e. 2 is actually enough).</p>
+    <h3>- What would be the impact of a faster processor?</h3>
+    <p> For the previous machine description change the "<i>Relative processor
+        speed"</i> of the "<i>Node information"</i> window to 5.0. This will
+      model a processor 5 times faster in the execution of the sequential
+      computation burst between MPI calls. You will observe that now the
+      application is more sensitive to contention. You will need to increase the
+      number of buses to achieve a good efficiency.</p>
+    <p> An interesting simulation is to assume infinite bandwidth (you have to
+      put a 0 in the "<i>Network bandwidth"</i> field on the <em>"Environment
+        information"</em> window) and zero latency (<i>"Startup"</i> value under
+      the "<em>Inter-node communication parameters</em>" on the <span style="font-style: italic;">"Node
+        information"</span> window). This will give a limit of the efficiency of
+      the application due to load imbalance and dependence chains.</p>
+    <h3>- What happens if we simulate 2 processors per node? What about 4 and 8?</h3>
+    <p> At this point, try to repeat the whole analysis described in this
+      section varying <i>"Number of processors"</i> per node, and the processes (or
+      "tasks") assigned to each node. To do so, run the simulator using the Dimemas 
+      configuration files  <font face="monospace">MN.128.2ppn.cfg</font> (2 processes
+      per node), <font face="monospace">MN.128.4ppn.cfg</font> (4 processes
+      per node), and <font face="monospace">MN.128.8ppn.cfg</font> (8 processes
+      per node). Compare the results with the simulations with less processors.</p>
+    <h2>Visualization of the internals of the communication</h2>
+    <p> Given that Dimemas has knowledge of the actual point in time where a
+      data transfer takes place, it can emit such information to the generated
+      Paraver file. The following Paraver configuration files shows how this
+      information can be visualized or which measurements can be made. Let us
+      assume we do a simulation with 10x processor speed, only 20 concurrent
+      communication.</p>
+    <ul>
+      <li>Configuration file <font face="monospace"><a href="cfgs/used_network_bw.cfg">/cfgs/used_network_bw.cfg</a></font>
+        &gt;displays the aggregated instantaneous bandwidth through the network.
+      </li>
+    </ul>
+  </body>
+</html>

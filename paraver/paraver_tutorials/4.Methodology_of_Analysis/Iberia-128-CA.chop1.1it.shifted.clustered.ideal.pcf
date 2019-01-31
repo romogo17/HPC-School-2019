@@ -1,0 +1,234 @@
+DEFAULT_OPTIONS
+
+LEVEL               TASK
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 21
+YMAX_SCALE          20
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC         State As Is
+
+
+STATES
+0	Idle
+1	Running
+2	Not created
+3	Waiting a message
+4	Blocked
+5	Thd. Synchr.
+6	Test/Probe
+7	Sched. and Fork/Join
+8	Wait/WaitAll
+9	Blocked
+10	Immediate Send
+11	Immediate Receive
+12	I/O
+13	Group Communication
+14	Tracing Disabled
+15	Overhead
+16	SendRecv
+17	One Sided OP
+18	Startup Latency
+19	Waiting links
+20	Data copy
+21	Round Trip Time
+
+STATES_COLOR
+0	{117,195,255}
+1	{0,0,255}
+2	{255,255,255}
+3	{255,0,0}
+4	{255,0,174}
+5	{179,0,0}
+6	{0,255,0}
+7	{255,255,0}
+8	{235,0,0}
+9	{0,162,0}
+10	{255,0,255}
+11	{100,100,177}
+12	{172,174,41}
+13	{255,144,26}
+14	{2,255,177}
+15	{192,224,0}
+16	{66,66,66}
+17	{189,168,100}
+18	{95,200,0}
+19	{203,60,69}
+20	{0,109,255}
+21	{55,55,55}
+
+EVENT_TYPE
+10  90  Critical Path Block
+VALUES
+1  Begin
+0  End
+
+
+EVENT_TYPE
+10  89  I/O
+VALUES
+0      IO METADATA BEGIN
+1      IO METADATA END
+2      IO BLOCK NONCOLLECTIVE READ BEGIN
+3      IO BLOCK NONCOLLECTIVE READ END
+4      IO BLOCK NONCOLLECTIVE WRITE BEGIN
+5      IO BLOCK NONCOLLECTIVE WRITE END
+6      IO BLOCK COLLECTIVE READ BEGIN
+7      IO BLOCK COLLECTIVE READ END
+8      IO BLOCK COLLECTIVE WRITE BEGIN
+9      IO BLOCK COLLECTIVE WRITE END
+10     IO NONBLOCK NONCOLLECTIVE READ BEGIN
+11     IO NONBLOCK NONCOLLECTIVE END
+12     IO NONBLOCK NONCOLLECTIVE WRITE BEGIN
+13     IO NONBLOCK COLLECTIVE READ BEGIN
+14     IO NONBLOCK COLLECTIVE WRITE BEGIN
+15     IO NONBLOCK COLLECTIVE END
+
+
+EVENT_TYPE
+11  88   One Sided Operations
+VALUES
+0      OS START
+1      OS LATENCY
+2      OS END
+3      OS FENCE START
+4      OS FENCE END
+5      OS GET LOCK
+6      OS WAIT LOCK
+7      OS UNLOCK BEGIN
+8      OS UNLOCK END
+9      OS POST POST
+10     OS POST START
+11     OS POST START BLOCK
+12     OS POST COMPLETE BLOCK
+13     OS POST COMPLETE
+14     OS POST WAIT
+15     OS POST WAIT BLOCK
+
+
+
+EVENT_TYPE
+8  91  GROUP_BLOCK
+VALUES
+0       END
+
+
+
+EVENT_TYPE
+8  92  GROUP_LAST
+VALUES
+0       END
+
+
+
+EVENT_TYPE
+8  93  GROUP_FREE
+VALUES
+0       END
+
+
+
+EVENT_TYPE
+9	50000001	MPI Point-to-point
+VALUES
+0	End
+4	MPI_Irecv
+3	MPI_Isend
+5	MPI_Wait
+
+
+EVENT_TYPE
+9	50000002	MPI Collective Comm
+VALUES
+0	End
+10	MPI_Allreduce
+
+
+EVENT_TYPE
+9	50000003	MPI Other
+VALUES
+0	End
+19	MPI_Comm_rank
+
+
+EVENT_TYPE
+9	50000004	MPI One-sided
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	60000019	User functions
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	60000020	User calls
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	60000021	User Block
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	40000016	I/O Read
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	40000017	I/O Write
+VALUES
+0	End
+
+
+EVENT_TYPE
+9	40000018	I/O Call
+VALUES
+0	End
+
+
+GRADIENT_COLOR
+0     {0,255,2}
+1     {0,244,13}
+2     {0,232,25}
+3     {0,220,37}
+4     {0,209,48}
+5     {0,197,60}
+6     {0,185,72}
+7     {0,173,84}
+8     {0,162,95}
+9     {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0     Gradient 0
+1     Grad. 1/MPI Events
+2     Grad. 2/OMP Events
+3     Grad. 3/OMP locks
+4     Grad. 4/User func
+5     Grad. 5/User Events
+6     Grad. 6/General Events
+7     Gradient 7/Hard. Counters
+8     Gradient 8
+9     Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
