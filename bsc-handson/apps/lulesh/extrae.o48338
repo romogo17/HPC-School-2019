@@ -1,0 +1,253 @@
+Welcome to Extrae 3.6.1
+Extrae: Parsing the configuration file (extrae/extrae.xml) begins
+Extrae: Tracing package is located on /home/jgimenez/tools/extrae-3.6.1
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: MPI routines will collect HW counters information.
+Extrae: Warning! <openmp> tag will be ignored. This library does not support OpenMP.
+Extrae: Tracing 3 level(s) of MPI callers: [ 1 2 3 ]
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_RES_STL (0x80000039) > - never changes
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 2
+Extrae: HWC set 2 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_LD_INS (0x80000035) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (extrae/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /home/taller-771/BSC-handson/apps/lulesh
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 1 threads
+
+Extrae: Temporal directory (/home/taller-771/BSC-handson/apps/lulesh) is shared among processes.
+Extrae: Final directory (/home/taller-771/BSC-handson/apps/lulesh) is shared among processes.
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 27 tasks and 1 threads
+
+Running problem size 64^3 per domain until completion
+Num processors: 27
+Total number of elements: 7077888
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+cycle = 1, time = 3.740620e-08, dt=3.740620e-08
+cycle = 2, time = 8.229365e-08, dt=4.488744e-08
+cycle = 3, time = 9.767935e-08, dt=1.538570e-08
+cycle = 4, time = 1.105276e-07, dt=1.284826e-08
+cycle = 5, time = 1.219813e-07, dt=1.145373e-08
+cycle = 6, time = 1.326166e-07, dt=1.063531e-08
+cycle = 7, time = 1.427281e-07, dt=1.011143e-08
+cycle = 8, time = 1.524946e-07, dt=9.766548e-09
+cycle = 9, time = 1.620375e-07, dt=9.542855e-09
+cycle = 10, time = 1.714458e-07, dt=9.408283e-09
+cycle = 11, time = 1.827357e-07, dt=1.128994e-08
+cycle = 12, time = 1.954826e-07, dt=1.274692e-08
+cycle = 13, time = 2.075326e-07, dt=1.204994e-08
+cycle = 14, time = 2.188884e-07, dt=1.135582e-08
+cycle = 15, time = 2.295494e-07, dt=1.066102e-08
+cycle = 16, time = 2.397274e-07, dt=1.017796e-08
+cycle = 17, time = 2.496020e-07, dt=9.874640e-09
+cycle = 18, time = 2.593277e-07, dt=9.725667e-09
+cycle = 19, time = 2.690518e-07, dt=9.724137e-09
+cycle = 20, time = 2.787759e-07, dt=9.724137e-09
+Run completed:  
+   Problem size        =  64 
+   MPI tasks           =  27 
+   Iteration count     =  20 
+   Final Origin Energy = 1.148287e+09 
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 1.490116e-07
+        TotalAbsDiff = 1.552411e-07
+        MaxRelDiff   = 1.791872e-12
+
+
+Elapsed time         =      35.19 (s)
+Grind time (us/z/c)  =  6.7121892 (per dom)  ( 0.2485996 overall)
+FOM                  =  4022.5326 (z/s)
+
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086404000001000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086405000000000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086403000023000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086402000003000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086407000007000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086406000006000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086401000002000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086411000009000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086410000008000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086409000005000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086417000015000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086421000018000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086412000011000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086427000026000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086420000019000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086419000017000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086422000020000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086423000021000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086426000024000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086425000025000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086414000012000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086416000014000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086413000010000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086424000022000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086408000004000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086418000016000000.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086415000013000000.mpit
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086427000026000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086413000010000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086424000022000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086404000001000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086408000004000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086405000000000000.sym
+Extrae: Deallocating memory.
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086415000013000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086403000023000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086401000002000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086402000003000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086406000006000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086407000007000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086410000008000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086411000009000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086409000005000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086412000011000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086417000015000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086419000017000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086421000018000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086420000019000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086422000020000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086423000021000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086426000024000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086414000012000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086416000014000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086418000016000000.sym
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086425000025000000.sym
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Waiting for all tasks to reach the checkpoint.
+Extrae: Executing the merge process (using /home/taller-771/BSC-handson/apps/lulesh/TRACE.mpits).
+merger: Extrae 3.6.1
+mpi2prv: Tree order is set to 16
+mpi2prv: Assigned nodes < zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca, zarate-3c.cnca >
+mpi2prv: Assigned size per processor < <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte, 1 Mbytes, <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte, 1 Mbytes, <1 Mbyte, 1 Mbytes, 1 Mbytes, 1 Mbytes, <1 Mbyte, 1 Mbytes, <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte, 1 Mbytes, <1 Mbyte, <1 Mbyte, <1 Mbyte, <1 Mbyte >
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086405000000000000.mpit is object 1.1.1 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086404000001000000.mpit is object 1.2.1 on node zarate-3c.cnca assigned to processor 1
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086401000002000000.mpit is object 1.3.1 on node zarate-3c.cnca assigned to processor 2
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086402000003000000.mpit is object 1.4.1 on node zarate-3c.cnca assigned to processor 3
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086408000004000000.mpit is object 1.5.1 on node zarate-3c.cnca assigned to processor 4
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086409000005000000.mpit is object 1.6.1 on node zarate-3c.cnca assigned to processor 5
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086406000006000000.mpit is object 1.7.1 on node zarate-3c.cnca assigned to processor 6
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086407000007000000.mpit is object 1.8.1 on node zarate-3c.cnca assigned to processor 7
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086410000008000000.mpit is object 1.9.1 on node zarate-3c.cnca assigned to processor 8
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086411000009000000.mpit is object 1.10.1 on node zarate-3c.cnca assigned to processor 9
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086413000010000000.mpit is object 1.11.1 on node zarate-3c.cnca assigned to processor 10
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086412000011000000.mpit is object 1.12.1 on node zarate-3c.cnca assigned to processor 11
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086414000012000000.mpit is object 1.13.1 on node zarate-3c.cnca assigned to processor 12
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086415000013000000.mpit is object 1.14.1 on node zarate-3c.cnca assigned to processor 13
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086416000014000000.mpit is object 1.15.1 on node zarate-3c.cnca assigned to processor 14
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086417000015000000.mpit is object 1.16.1 on node zarate-3c.cnca assigned to processor 15
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086418000016000000.mpit is object 1.17.1 on node zarate-3c.cnca assigned to processor 16
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086419000017000000.mpit is object 1.18.1 on node zarate-3c.cnca assigned to processor 17
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086421000018000000.mpit is object 1.19.1 on node zarate-3c.cnca assigned to processor 18
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086420000019000000.mpit is object 1.20.1 on node zarate-3c.cnca assigned to processor 19
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086422000020000000.mpit is object 1.21.1 on node zarate-3c.cnca assigned to processor 20
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086423000021000000.mpit is object 1.22.1 on node zarate-3c.cnca assigned to processor 21
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086424000022000000.mpit is object 1.23.1 on node zarate-3c.cnca assigned to processor 22
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086403000023000000.mpit is object 1.24.1 on node zarate-3c.cnca assigned to processor 23
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086426000024000000.mpit is object 1.25.1 on node zarate-3c.cnca assigned to processor 24
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086425000025000000.mpit is object 1.26.1 on node zarate-3c.cnca assigned to processor 25
+mpi2prv: File /home/taller-771/BSC-handson/apps/lulesh/set-0/TRACE@zarate-3c.cnca.0000086427000026000000.mpit is object 1.27.1 on node zarate-3c.cnca assigned to processor 26
+mpi2prv: Time synchronization has been turned off
+mpi2prv: A total of 4 symbols were imported from /home/taller-771/BSC-handson/apps/lulesh/TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 4 HWC counter descriptions imported
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Processor 18 succeeded to translate its assigned files
+mpi2prv: Processor 8 succeeded to translate its assigned files
+mpi2prv: Processor 24 succeeded to translate its assigned files
+mpi2prv: Processor 26 succeeded to translate its assigned files
+mpi2prv: Processor 20 succeeded to translate its assigned files
+mpi2prv: Processor 2 succeeded to translate its assigned files
+mpi2prv: Processor 21 succeeded to translate its assigned files
+mpi2prv: Processor 3 succeeded to translate its assigned files
+mpi2prv: Processor 6 succeeded to translate its assigned files
+mpi2prv: Processor 25 succeeded to translate its assigned files
+mpi2prv: Processor 19 succeeded to translate its assigned files
+mpi2prv: Processor 17 succeeded to translate its assigned files
+mpi2prv: Processor 7 succeeded to translate its assigned files
+mpi2prv: Processor 5 succeeded to translate its assigned files
+mpi2prv: Processor 23 succeeded to translate its assigned files
+mpi2prv: Processor 15 succeeded to translate its assigned files
+mpi2prv: Processor 1 succeeded to translate its assigned files
+mpi2prv: Processor 9 succeeded to translate its assigned files
+mpi2prv: Processor 11 succeeded to translate its assigned files
+mpi2prv: Processor 22 succeeded to translate its assigned files
+mpi2prv: Processor 16 succeeded to translate its assigned files
+mpi2prv: Processor 4 succeeded to translate its assigned files
+mpi2prv: Processor 10 succeeded to translate its assigned files
+mpi2prv: Processor 14 succeeded to translate its assigned files
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Processor 12 succeeded to translate its assigned files
+mpi2prv: Processor 13 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Gathering addresses across processors... done
+mpi2prv: Elapsed time broadcasting and sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Starting the distribution of foreign receives.
+mpi2prv: Processor 0 is storing 207 foreign receives (9 Kbytes) for the next phase.
+mpi2prv: Ended the distribution of foreign receives.
+mpi2prv: Sharing information < MPImpi2prv: Processor 1 is storing 331 foreign receives (15 Kbytes) for the next phase.
+mpi2prv: Processor 2 is storing 227 foreign receives (10 Kbytes) for the next phase.
+mpi2prv: Processor 3 is storing 351 foreign receives (16 Kbytes) for the next phase.
+mpi2prv: Processor 4 is storing 537 foreign receives (25 Kbytes) for the next phase.
+mpi2prv: Processor 5 is storing 371 foreign receives (17 Kbytes) for the next phase.
+mpi2prv: Processor 6 is storing 247 foreign receives (11 Kbytes) for the next phase.
+mpi2prv: Processor 7 is storing 391 foreign receives (18 Kbytes) for the next phase.
+mpi2prv: Processor 8 is storing 267 foreign receives (12 Kbytes) for the next phase.
+mpi2prv: Processor 9 is storing 391 foreign receives (18 Kbytes) for the next phase.
+mpi2prv: Processor 10 is storing 597 foreign receives (28 Kbytes) for the next phase.
+mpi2prv: Processor 11 is storing 411 foreign receives (19 Kbytes) for the next phase.
+mpi2prv: Processor 12 is storing 617 foreign receives (29 Kbytes) for the next phase.
+mpi2prv: Processor 13 is storing 926 foreign receives (44 Kbytes) for the next phase.
+mpi2prv: Processor 14 is storing 637 foreign receives (30 Kbytes) for the next phase.
+mpi2prv: Processor 15 is storing 431 foreign receives (20 Kbytes) for the next phase.
+mpi2prv: Processor 16 is storing 657 foreign receives (31 Kbytes) for the next phase.
+mpi2prv: Processor 17 is storing 451 foreign receives (21 Kbytes) for the next phase.
+mpi2prv: Processor 18 is storing 287 foreign receives (13 Kbytes) for the next phase.
+mpi2prv: Processor 19 is storing 451 foreign receives (21 Kbytes) for the next phase.
+mpi2prv: Processor 20 is storing 307 foreign receives (14 Kbytes) for the next phase.
+mpi2prv: Processor 21 is storing 471 foreign receives (22 Kbytes) for the next phase.
+mpi2prv: Processor 22 is storing 717 foreign receives (34 Kbytes) for the next phase.
+mpi2prv: Processor 23 is storing 491 foreign receives (23 Kbytes) for the next phase.
+mpi2prv: Processor 24 is storing 327 foreign receives (15 Kbytes) for the next phase.
+mpi2prv: Processor 25 is storing 511 foreign receives (24 Kbytes) for the next phase.
+mpi2prv: Processor 26 is storing 347 foreign receives (16 Kbytes) for the next phase.
+ OpenMP pthread CUDA HWC MISC callers files >
+mpi2prv: Elapsed time sharing communications: 0 hours 0 minutes 0 seconds
+mpi2prv: Sharing thread accounting information for ptask 0 done
+mpi2prv: Merge tree depth for 27 tasks is 2 levels using a fan-out of 16 leaves
+mpi2prv: Executing merge tree step 1 of 2.
+mpi2prv: Elapsed time on tree step 1: 0 hours 0 minutes 2 seconds
+mpi2prv: Executing merge tree step 2 of 2.
+mpi2prv: Generating tracefile (intermediate buffers of 26214 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time on tree step 2: 0 hours 0 minutes 1 seconds
+mpi2prv: Resulting tracefile occupies 14376306 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 23 seconds
+mpi2prv: Congratulations! lulesh2_27p.prv has been generated.

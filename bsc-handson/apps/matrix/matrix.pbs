@@ -1,0 +1,14 @@
+#PBS -N matrix
+#PBS -q phi-n1h72
+#PBS -l nodes=1
+#PBS -l walltime=00:15:00
+
+cd $PBS_O_WORKDIR
+
+
+export TRACE_NAME=matrix.l1.prv
+extrae/trace.sh ./matrix.l1 4000 
+
+export TRACE_NAME=matrix.l2.prv
+extrae/trace.sh ./matrix.l2 4000 
+

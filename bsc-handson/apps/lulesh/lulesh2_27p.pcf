@@ -1,0 +1,380 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+18    Profiling
+19    On-line analysis
+20    Remote memory access
+21    Atomic memory operation
+22    Memory ordering operation
+23    Distributed locking
+24    Overhead
+25    One-sided op
+26    Startup latency
+27    Waiting links
+28    Data copy
+29    RTT
+30    Allocating memory
+31    Freeing memory
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+18    {169,169,169}
+19    {169,0,0}
+20    {0,109,255}
+21    {200,61,68}
+22    {200,66,0}
+23    {0,41,0}
+24    {139,121,177}
+25    {116,116,116}
+26    {200,50,89}
+27    {255,171,98}
+28    {0,68,189}
+29    {52,43,0}
+30    {255,46,0}
+31    {100,216,32}
+
+
+EVENT_TYPE
+9   50000001    MPI Point-to-point
+VALUES
+4   MPI_Irecv
+3   MPI_Isend
+5   MPI_Wait
+6   MPI_Waitall
+0   Outside MPI
+
+
+EVENT_TYPE
+9   50000002    MPI Collective Comm
+VALUES
+10   MPI_Allreduce
+8   MPI_Barrier
+9   MPI_Reduce
+0   Outside MPI
+
+
+EVENT_TYPE
+9   50000003    MPI Other
+VALUES
+19   MPI_Comm_rank
+20   MPI_Comm_size
+32   MPI_Finalize
+31   MPI_Init
+0   Outside MPI
+
+
+EVENT_TYPE
+1    50100001    Send Size in MPI Global OP
+1    50100002    Recv Size in MPI Global OP
+1    50100003    Root in MPI Global OP
+1    50100004    Communicator in MPI Global OP
+
+
+EVENT_TYPE
+6    40000033    Executing CPU
+6    40000133    CPU-Event sampling interval
+
+
+EVENT_TYPE
+6    40000001    Application
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000050    RAW clock() value from system
+
+
+EVENT_TYPE
+6    40000003    Flushing Traces
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000002    Trace initialization
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000036    Process IDentifier
+6    40000037    Parent Process IDentifier
+6    40000038    fork() depth
+
+
+EVENT_TYPE
+7  42000050 PAPI_TOT_INS [Instr completed]
+7  42000059 PAPI_TOT_CYC [Total cycles]
+7  42000057 PAPI_RES_STL [Stalled res cycles]
+7  41999999 Active hardware counter set
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0    70000001    Caller at level 1
+0    70000002    Caller at level 2
+0    70000003    Caller at level 3
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 main
+4 Domain::..ndexSets [Domain::CreateRegionIndexSets]
+5 Domain::Domain
+6 CommRecv
+7 CommSend
+8 CommSBN
+9 CalcForceForNodes
+10 LagrangeLeapFrog
+11 LagrangeNodal
+12 CommSyncPosVel
+13 CalcQForElems
+14 CommMonoQ
+15 TimeIncrement
+
+
+EVENT_TYPE
+0    80000001    Caller line at level 1
+0    80000002    Caller line at level 2
+0    80000003    Caller line at level 3
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 101 (lulesh-comm.cc, lulesh2.0)
+4 112 (lulesh-comm.cc, lulesh2.0)
+5 121 (lulesh-comm.cc, lulesh2.0)
+6 130 (lulesh-comm.cc, lulesh2.0)
+7 139 (lulesh-comm.cc, lulesh2.0)
+8 148 (lulesh-comm.cc, lulesh2.0)
+9 157 (lulesh-comm.cc, lulesh2.0)
+10 168 (lulesh-comm.cc, lulesh2.0)
+11 177 (lulesh-comm.cc, lulesh2.0)
+12 186 (lulesh-comm.cc, lulesh2.0)
+13 195 (lulesh-comm.cc, lulesh2.0)
+14 204 (lulesh-comm.cc, lulesh2.0)
+15 213 (lulesh-comm.cc, lulesh2.0)
+16 222 (lulesh-comm.cc, lulesh2.0)
+17 231 (lulesh-comm.cc, lulesh2.0)
+18 240 (lulesh-comm.cc, lulesh2.0)
+19 249 (lulesh-comm.cc, lulesh2.0)
+20 258 (lulesh-comm.cc, lulesh2.0)
+21 267 (lulesh-comm.cc, lulesh2.0)
+22 279 (lulesh-comm.cc, lulesh2.0)
+23 289 (lulesh-comm.cc, lulesh2.0)
+24 299 (lulesh-comm.cc, lulesh2.0)
+25 309 (lulesh-comm.cc, lulesh2.0)
+26 319 (lulesh-comm.cc, lulesh2.0)
+27 329 (lulesh-comm.cc, lulesh2.0)
+28 339 (lulesh-comm.cc, lulesh2.0)
+29 349 (lulesh-comm.cc, lulesh2.0)
+30 401 (lulesh-comm.cc, lulesh2.0)
+31 422 (lulesh-comm.cc, lulesh2.0)
+32 438 (lulesh-comm.cc, lulesh2.0)
+33 461 (lulesh-comm.cc, lulesh2.0)
+34 479 (lulesh-comm.cc, lulesh2.0)
+35 502 (lulesh-comm.cc, lulesh2.0)
+36 520 (lulesh-comm.cc, lulesh2.0)
+37 539 (lulesh-comm.cc, lulesh2.0)
+38 556 (lulesh-comm.cc, lulesh2.0)
+39 573 (lulesh-comm.cc, lulesh2.0)
+40 590 (lulesh-comm.cc, lulesh2.0)
+41 607 (lulesh-comm.cc, lulesh2.0)
+42 624 (lulesh-comm.cc, lulesh2.0)
+43 641 (lulesh-comm.cc, lulesh2.0)
+44 658 (lulesh-comm.cc, lulesh2.0)
+45 675 (lulesh-comm.cc, lulesh2.0)
+46 692 (lulesh-comm.cc, lulesh2.0)
+47 709 (lulesh-comm.cc, lulesh2.0)
+48 726 (lulesh-comm.cc, lulesh2.0)
+49 740 (lulesh-comm.cc, lulesh2.0)
+50 754 (lulesh-comm.cc, lulesh2.0)
+51 768 (lulesh-comm.cc, lulesh2.0)
+52 782 (lulesh-comm.cc, lulesh2.0)
+53 796 (lulesh-comm.cc, lulesh2.0)
+54 810 (lulesh-comm.cc, lulesh2.0)
+55 824 (lulesh-comm.cc, lulesh2.0)
+56 838 (lulesh-comm.cc, lulesh2.0)
+57 843 (lulesh-comm.cc, lulesh2.0)
+58 889 (lulesh-comm.cc, lulesh2.0)
+59 898 (lulesh-comm.cc, lulesh2.0)
+60 911 (lulesh-comm.cc, lulesh2.0)
+61 930 (lulesh-comm.cc, lulesh2.0)
+62 945 (lulesh-comm.cc, lulesh2.0)
+63 965 (lulesh-comm.cc, lulesh2.0)
+64 980 (lulesh-comm.cc, lulesh2.0)
+65 997 (lulesh-comm.cc, lulesh2.0)
+66 1011 (lulesh-comm.cc, lulesh2.0)
+67 1025 (lulesh-comm.cc, lulesh2.0)
+68 1039 (lulesh-comm.cc, lulesh2.0)
+69 1053 (lulesh-comm.cc, lulesh2.0)
+70 1067 (lulesh-comm.cc, lulesh2.0)
+71 1081 (lulesh-comm.cc, lulesh2.0)
+72 1095 (lulesh-comm.cc, lulesh2.0)
+73 1109 (lulesh-comm.cc, lulesh2.0)
+74 1123 (lulesh-comm.cc, lulesh2.0)
+75 1137 (lulesh-comm.cc, lulesh2.0)
+76 1151 (lulesh-comm.cc, lulesh2.0)
+77 1167 (lulesh-comm.cc, lulesh2.0)
+78 1179 (lulesh-comm.cc, lulesh2.0)
+79 1191 (lulesh-comm.cc, lulesh2.0)
+80 1203 (lulesh-comm.cc, lulesh2.0)
+81 1215 (lulesh-comm.cc, lulesh2.0)
+82 1227 (lulesh-comm.cc, lulesh2.0)
+83 1239 (lulesh-comm.cc, lulesh2.0)
+84 1251 (lulesh-comm.cc, lulesh2.0)
+85 1310 (lulesh-comm.cc, lulesh2.0)
+86 1332 (lulesh-comm.cc, lulesh2.0)
+87 1366 (lulesh-comm.cc, lulesh2.0)
+88 1402 (lulesh-comm.cc, lulesh2.0)
+89 1461 (lulesh-comm.cc, lulesh2.0)
+90 1475 (lulesh-comm.cc, lulesh2.0)
+91 1489 (lulesh-comm.cc, lulesh2.0)
+92 1503 (lulesh-comm.cc, lulesh2.0)
+93 1517 (lulesh-comm.cc, lulesh2.0)
+94 1531 (lulesh-comm.cc, lulesh2.0)
+95 1602 (lulesh-comm.cc, lulesh2.0)
+96 1626 (lulesh-comm.cc, lulesh2.0)
+97 1650 (lulesh-comm.cc, lulesh2.0)
+98 1674 (lulesh-comm.cc, lulesh2.0)
+99 1734 (lulesh-comm.cc, lulesh2.0)
+100 1734 (lulesh-comm.cc, lulesh2.0)
+101 1743 (lulesh-comm.cc, lulesh2.0)
+102 1757 (lulesh-comm.cc, lulesh2.0)
+103 1777 (lulesh-comm.cc, lulesh2.0)
+104 1791 (lulesh-comm.cc, lulesh2.0)
+105 1810 (lulesh-comm.cc, lulesh2.0)
+106 1824 (lulesh-comm.cc, lulesh2.0)
+107 117 (lulesh-init.cc, lulesh2.0)
+108 381 (lulesh-init.cc, lulesh2.0)
+109 216 (lulesh.cc, lulesh2.0)
+110 1139 (lulesh.cc, lulesh2.0)
+111 1160 (lulesh.cc, lulesh2.0)
+112 1161 (lulesh.cc, lulesh2.0)
+113 1269 (lulesh.cc, lulesh2.0)
+114 1291 (lulesh.cc, lulesh2.0)
+115 1292 (lulesh.cc, lulesh2.0)
+116 1994 (lulesh.cc, lulesh2.0)
+117 2012 (lulesh.cc, lulesh2.0)
+118 2014 (lulesh.cc, lulesh2.0)
+119 2648 (lulesh.cc, lulesh2.0)
+120 2700 (lulesh.cc, lulesh2.0)
+121 2701 (lulesh.cc, lulesh2.0)
+122 2742 (lulesh.cc, lulesh2.0)
+123 2751 (lulesh.cc, lulesh2.0)
+124 2754 (lulesh.cc, lulesh2.0)
+125 2755 (lulesh.cc, lulesh2.0)
+126 2758 (lulesh.cc, lulesh2.0)
+127 2794 (lulesh.cc, lulesh2.0)
+128 2809 (lulesh.cc, lulesh2.0)
+
+
+EVENT_TYPE
+0 41000000 Object addresses for task 1.1
+VALUES
+1 _ZStL8__ioinit [0x0061d151-0x0061d151]
+2 completed.6355 [0x0061d150-0x0061d150]
+3 __FRAME_END__ [0x0041cb50-0x0041cb4f]
+4 __GNU_EH_FRAME_HDR [0x0041c050-0x0041c04f]
+5 _IO_stdin_used [0x0041b460-0x0041b463]
+6 __dso_handle [0x0041b468-0x0041b467]
+7 stderr@@GLIBC_2.2.5 [0x0061d148-0x0061d14f]
+8 _end [0x0061d158-0x0061d157]
+9 __bss_start [0x0061d144-0x0061d143]
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+

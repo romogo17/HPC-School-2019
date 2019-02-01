@@ -1,0 +1,4 @@
+H -2147483598 "PAPI_TOT_INS [Instr completed]"
+H -2147483589 "PAPI_TOT_CYC [Total cycles]"
+H -2147483591 "PAPI_RES_STL [Stalled res cycles]"
+H -2147483595 "PAPI_LD_INS [Loads]"

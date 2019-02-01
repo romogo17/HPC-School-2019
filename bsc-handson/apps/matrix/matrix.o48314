@@ -1,0 +1,1144 @@
+Welcome to Extrae 3.6.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: Parsing the configuration file (extrae/extrae.xml) begins
+Extrae: Tracing package is located on /home/jgimenez/tools/extrae-3.6.1
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_RES_STL (0x80000039) > - never changes
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 2
+Extrae: HWC set 2 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_LD_INS (0x80000035) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (extrae/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /home/taller-771/BSC-handson/apps/matrix
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 256 threads
+
+Execution time: 21.6988 seconds
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000000.mpit
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000000.sym
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000001.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000002.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000003.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000004.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000005.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000006.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000007.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000008.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000009.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000010.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000011.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000012.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000013.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000014.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000015.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000016.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000017.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000018.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000019.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000020.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000021.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000022.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000023.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000024.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000025.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000026.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000027.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000028.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000029.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000030.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000031.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000032.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000033.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000034.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000035.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000036.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000037.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000038.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000039.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000040.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000041.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000042.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000043.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000044.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000045.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000046.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000047.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000048.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000049.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000050.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000051.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000052.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000053.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000054.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000055.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000056.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000057.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000058.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000059.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000060.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000061.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000062.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000063.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000064.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000065.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000066.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000067.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000068.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000069.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000070.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000071.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000072.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000073.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000074.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000075.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000076.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000077.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000078.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000079.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000080.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000081.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000082.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000083.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000084.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000085.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000086.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000087.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000088.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000089.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000090.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000091.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000092.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000093.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000094.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000095.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000096.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000097.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000098.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000099.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000100.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000101.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000102.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000103.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000104.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000105.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000106.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000107.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000108.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000109.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000110.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000111.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000112.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000113.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000114.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000115.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000116.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000117.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000118.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000119.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000120.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000121.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000122.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000123.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000124.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000125.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000126.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000127.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000128.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000129.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000130.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000131.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000132.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000133.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000134.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000135.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000136.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000137.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000138.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000139.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000140.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000141.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000142.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000143.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000144.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000145.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000146.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000147.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000148.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000149.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000150.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000151.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000152.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000153.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000154.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000155.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000156.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000157.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000158.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000159.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000160.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000161.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000162.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000163.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000164.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000165.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000166.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000167.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000168.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000169.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000170.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000171.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000172.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000173.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000174.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000175.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000176.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000177.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000178.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000179.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000180.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000181.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000182.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000183.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000184.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000185.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000186.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000187.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000188.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000189.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000190.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000191.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000192.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000193.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000194.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000195.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000196.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000197.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000198.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000199.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000200.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000201.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000202.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000203.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000204.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000205.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000206.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000207.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000208.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000209.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000210.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000211.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000212.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000213.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000214.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000215.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000216.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000217.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000218.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000219.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000220.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000221.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000222.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000223.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000224.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000225.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000226.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000227.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000228.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000229.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000230.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000231.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000232.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000233.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000234.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000235.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000236.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000237.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000238.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000239.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000240.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000241.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000242.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000243.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000244.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000245.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000246.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000247.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000248.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000249.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000250.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000251.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000252.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000253.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000254.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000255.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /home/taller-771/BSC-handson/apps/matrix/TRACE.mpits).
+merger: Extrae 3.6.1
+mpi2prv: Assigned nodes < zarate-3c.cnca >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000000.mpit is object 1.1.1 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000001.mpit is object 1.1.2 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000002.mpit is object 1.1.3 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000003.mpit is object 1.1.4 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000004.mpit is object 1.1.5 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000005.mpit is object 1.1.6 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000006.mpit is object 1.1.7 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000007.mpit is object 1.1.8 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000008.mpit is object 1.1.9 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000009.mpit is object 1.1.10 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000010.mpit is object 1.1.11 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000011.mpit is object 1.1.12 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000012.mpit is object 1.1.13 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000013.mpit is object 1.1.14 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000014.mpit is object 1.1.15 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000015.mpit is object 1.1.16 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000016.mpit is object 1.1.17 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000017.mpit is object 1.1.18 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000018.mpit is object 1.1.19 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000019.mpit is object 1.1.20 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000020.mpit is object 1.1.21 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000021.mpit is object 1.1.22 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000022.mpit is object 1.1.23 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000023.mpit is object 1.1.24 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000024.mpit is object 1.1.25 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000025.mpit is object 1.1.26 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000026.mpit is object 1.1.27 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000027.mpit is object 1.1.28 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000028.mpit is object 1.1.29 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000029.mpit is object 1.1.30 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000030.mpit is object 1.1.31 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000031.mpit is object 1.1.32 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000032.mpit is object 1.1.33 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000033.mpit is object 1.1.34 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000034.mpit is object 1.1.35 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000035.mpit is object 1.1.36 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000036.mpit is object 1.1.37 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000037.mpit is object 1.1.38 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000038.mpit is object 1.1.39 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000039.mpit is object 1.1.40 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000040.mpit is object 1.1.41 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000041.mpit is object 1.1.42 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000042.mpit is object 1.1.43 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000043.mpit is object 1.1.44 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000044.mpit is object 1.1.45 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000045.mpit is object 1.1.46 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000046.mpit is object 1.1.47 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000047.mpit is object 1.1.48 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000048.mpit is object 1.1.49 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000049.mpit is object 1.1.50 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000050.mpit is object 1.1.51 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000051.mpit is object 1.1.52 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000052.mpit is object 1.1.53 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000053.mpit is object 1.1.54 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000054.mpit is object 1.1.55 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000055.mpit is object 1.1.56 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000056.mpit is object 1.1.57 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000057.mpit is object 1.1.58 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000058.mpit is object 1.1.59 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000059.mpit is object 1.1.60 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000060.mpit is object 1.1.61 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000061.mpit is object 1.1.62 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000062.mpit is object 1.1.63 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000063.mpit is object 1.1.64 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000064.mpit is object 1.1.65 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000065.mpit is object 1.1.66 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000066.mpit is object 1.1.67 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000067.mpit is object 1.1.68 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000068.mpit is object 1.1.69 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000069.mpit is object 1.1.70 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000070.mpit is object 1.1.71 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000071.mpit is object 1.1.72 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000072.mpit is object 1.1.73 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000073.mpit is object 1.1.74 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000074.mpit is object 1.1.75 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000075.mpit is object 1.1.76 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000076.mpit is object 1.1.77 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000077.mpit is object 1.1.78 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000078.mpit is object 1.1.79 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000079.mpit is object 1.1.80 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000080.mpit is object 1.1.81 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000081.mpit is object 1.1.82 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000082.mpit is object 1.1.83 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000083.mpit is object 1.1.84 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000084.mpit is object 1.1.85 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000085.mpit is object 1.1.86 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000086.mpit is object 1.1.87 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000087.mpit is object 1.1.88 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000088.mpit is object 1.1.89 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000089.mpit is object 1.1.90 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000090.mpit is object 1.1.91 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000091.mpit is object 1.1.92 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000092.mpit is object 1.1.93 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000093.mpit is object 1.1.94 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000094.mpit is object 1.1.95 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000095.mpit is object 1.1.96 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000096.mpit is object 1.1.97 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000097.mpit is object 1.1.98 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000098.mpit is object 1.1.99 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000099.mpit is object 1.1.100 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000100.mpit is object 1.1.101 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000101.mpit is object 1.1.102 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000102.mpit is object 1.1.103 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000103.mpit is object 1.1.104 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000104.mpit is object 1.1.105 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000105.mpit is object 1.1.106 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000106.mpit is object 1.1.107 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000107.mpit is object 1.1.108 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000108.mpit is object 1.1.109 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000109.mpit is object 1.1.110 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000110.mpit is object 1.1.111 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000111.mpit is object 1.1.112 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000112.mpit is object 1.1.113 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000113.mpit is object 1.1.114 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000114.mpit is object 1.1.115 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000115.mpit is object 1.1.116 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000116.mpit is object 1.1.117 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000117.mpit is object 1.1.118 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000118.mpit is object 1.1.119 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000119.mpit is object 1.1.120 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000120.mpit is object 1.1.121 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000121.mpit is object 1.1.122 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000122.mpit is object 1.1.123 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000123.mpit is object 1.1.124 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000124.mpit is object 1.1.125 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000125.mpit is object 1.1.126 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000126.mpit is object 1.1.127 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000127.mpit is object 1.1.128 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000128.mpit is object 1.1.129 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000129.mpit is object 1.1.130 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000130.mpit is object 1.1.131 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000131.mpit is object 1.1.132 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000132.mpit is object 1.1.133 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000133.mpit is object 1.1.134 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000134.mpit is object 1.1.135 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000135.mpit is object 1.1.136 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000136.mpit is object 1.1.137 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000137.mpit is object 1.1.138 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000138.mpit is object 1.1.139 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000139.mpit is object 1.1.140 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000140.mpit is object 1.1.141 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000141.mpit is object 1.1.142 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000142.mpit is object 1.1.143 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000143.mpit is object 1.1.144 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000144.mpit is object 1.1.145 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000145.mpit is object 1.1.146 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000146.mpit is object 1.1.147 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000147.mpit is object 1.1.148 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000148.mpit is object 1.1.149 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000149.mpit is object 1.1.150 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000150.mpit is object 1.1.151 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000151.mpit is object 1.1.152 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000152.mpit is object 1.1.153 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000153.mpit is object 1.1.154 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000154.mpit is object 1.1.155 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000155.mpit is object 1.1.156 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000156.mpit is object 1.1.157 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000157.mpit is object 1.1.158 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000158.mpit is object 1.1.159 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000159.mpit is object 1.1.160 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000160.mpit is object 1.1.161 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000161.mpit is object 1.1.162 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000162.mpit is object 1.1.163 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000163.mpit is object 1.1.164 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000164.mpit is object 1.1.165 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000165.mpit is object 1.1.166 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000166.mpit is object 1.1.167 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000167.mpit is object 1.1.168 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000168.mpit is object 1.1.169 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000169.mpit is object 1.1.170 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000170.mpit is object 1.1.171 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000171.mpit is object 1.1.172 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000172.mpit is object 1.1.173 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000173.mpit is object 1.1.174 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000174.mpit is object 1.1.175 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000175.mpit is object 1.1.176 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000176.mpit is object 1.1.177 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000177.mpit is object 1.1.178 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000178.mpit is object 1.1.179 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000179.mpit is object 1.1.180 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000180.mpit is object 1.1.181 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000181.mpit is object 1.1.182 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000182.mpit is object 1.1.183 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000183.mpit is object 1.1.184 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000184.mpit is object 1.1.185 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000185.mpit is object 1.1.186 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000186.mpit is object 1.1.187 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000187.mpit is object 1.1.188 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000188.mpit is object 1.1.189 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000189.mpit is object 1.1.190 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000190.mpit is object 1.1.191 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000191.mpit is object 1.1.192 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000192.mpit is object 1.1.193 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000193.mpit is object 1.1.194 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000194.mpit is object 1.1.195 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000195.mpit is object 1.1.196 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000196.mpit is object 1.1.197 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000197.mpit is object 1.1.198 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000198.mpit is object 1.1.199 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000199.mpit is object 1.1.200 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000200.mpit is object 1.1.201 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000201.mpit is object 1.1.202 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000202.mpit is object 1.1.203 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000203.mpit is object 1.1.204 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000204.mpit is object 1.1.205 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000205.mpit is object 1.1.206 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000206.mpit is object 1.1.207 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000207.mpit is object 1.1.208 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000208.mpit is object 1.1.209 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000209.mpit is object 1.1.210 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000210.mpit is object 1.1.211 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000211.mpit is object 1.1.212 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000212.mpit is object 1.1.213 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000213.mpit is object 1.1.214 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000214.mpit is object 1.1.215 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000215.mpit is object 1.1.216 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000216.mpit is object 1.1.217 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000217.mpit is object 1.1.218 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000218.mpit is object 1.1.219 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000219.mpit is object 1.1.220 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000220.mpit is object 1.1.221 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000221.mpit is object 1.1.222 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000222.mpit is object 1.1.223 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000223.mpit is object 1.1.224 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000224.mpit is object 1.1.225 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000225.mpit is object 1.1.226 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000226.mpit is object 1.1.227 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000227.mpit is object 1.1.228 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000228.mpit is object 1.1.229 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000229.mpit is object 1.1.230 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000230.mpit is object 1.1.231 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000231.mpit is object 1.1.232 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000232.mpit is object 1.1.233 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000233.mpit is object 1.1.234 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000234.mpit is object 1.1.235 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000235.mpit is object 1.1.236 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000236.mpit is object 1.1.237 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000237.mpit is object 1.1.238 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000238.mpit is object 1.1.239 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000239.mpit is object 1.1.240 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000240.mpit is object 1.1.241 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000241.mpit is object 1.1.242 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000242.mpit is object 1.1.243 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000243.mpit is object 1.1.244 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000244.mpit is object 1.1.245 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000245.mpit is object 1.1.246 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000246.mpit is object 1.1.247 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000247.mpit is object 1.1.248 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000248.mpit is object 1.1.249 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000249.mpit is object 1.1.250 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000250.mpit is object 1.1.251 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000251.mpit is object 1.1.252 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000252.mpit is object 1.1.253 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000253.mpit is object 1.1.254 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000254.mpit is object 1.1.255 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084212000000000255.mpit is object 1.1.256 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: A total of 4 symbols were imported from /home/taller-771/BSC-handson/apps/matrix/TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 4 HWC counter descriptions imported
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 26214 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 108418 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 46 seconds
+mpi2prv: Congratulations! matrix.l1.prv has been generated.
+Welcome to Extrae 3.6.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: Parsing the configuration file (extrae/extrae.xml) begins
+Extrae: Tracing package is located on /home/jgimenez/tools/extrae-3.6.1
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: Warning! <mpi> tag will be ignored. This library does not support MPI.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: <mpi> tag at <Callers> level will be ignored. This library does not support MPI.
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 1
+Extrae: HWC set 1 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_RES_STL (0x80000039) > - never changes
+Extrae: Warning! change-at-time time units not specified. Using seconds
+Extrae: PAPI domain set to ALL for HWC set 2
+Extrae: HWC set 2 contains following counters < PAPI_TOT_INS (0x80000032) PAPI_TOT_CYC (0x8000003b) PAPI_LD_INS (0x80000035) > - never changes
+Extrae: Resource usage is disabled at flush buffer.
+Extrae: Memory usage is disabled at flush buffer.
+Extrae: Tracing buffer can hold 5000000 events
+Extrae: Circular buffer disabled.
+Extrae: Sampling buffers will be written at instrumentation points
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (extrae/extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /home/taller-771/BSC-handson/apps/matrix
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 256 threads
+
+Execution time: 74.4622 seconds
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000000.mpit
+Extrae: Intermediate raw sym file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000000.sym
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000001.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000002.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000003.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000004.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000005.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000006.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000007.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000008.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000009.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000010.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000011.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000012.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000013.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000014.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000015.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000016.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000017.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000018.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000019.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000020.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000021.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000022.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000023.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000024.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000025.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000026.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000027.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000028.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000029.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000030.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000031.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000032.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000033.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000034.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000035.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000036.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000037.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000038.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000039.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000040.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000041.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000042.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000043.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000044.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000045.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000046.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000047.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000048.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000049.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000050.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000051.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000052.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000053.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000054.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000055.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000056.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000057.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000058.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000059.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000060.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000061.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000062.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000063.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000064.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000065.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000066.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000067.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000068.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000069.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000070.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000071.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000072.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000073.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000074.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000075.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000076.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000077.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000078.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000079.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000080.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000081.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000082.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000083.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000084.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000085.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000086.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000087.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000088.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000089.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000090.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000091.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000092.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000093.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000094.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000095.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000096.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000097.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000098.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000099.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000100.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000101.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000102.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000103.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000104.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000105.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000106.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000107.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000108.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000109.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000110.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000111.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000112.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000113.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000114.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000115.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000116.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000117.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000118.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000119.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000120.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000121.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000122.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000123.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000124.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000125.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000126.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000127.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000128.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000129.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000130.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000131.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000132.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000133.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000134.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000135.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000136.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000137.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000138.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000139.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000140.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000141.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000142.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000143.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000144.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000145.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000146.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000147.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000148.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000149.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000150.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000151.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000152.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000153.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000154.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000155.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000156.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000157.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000158.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000159.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000160.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000161.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000162.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000163.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000164.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000165.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000166.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000167.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000168.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000169.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000170.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000171.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000172.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000173.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000174.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000175.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000176.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000177.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000178.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000179.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000180.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000181.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000182.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000183.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000184.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000185.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000186.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000187.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000188.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000189.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000190.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000191.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000192.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000193.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000194.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000195.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000196.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000197.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000198.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000199.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000200.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000201.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000202.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000203.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000204.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000205.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000206.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000207.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000208.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000209.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000210.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000211.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000212.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000213.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000214.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000215.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000216.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000217.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000218.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000219.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000220.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000221.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000222.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000223.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000224.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000225.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000226.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000227.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000228.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000229.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000230.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000231.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000232.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000233.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000234.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000235.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000236.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000237.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000238.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000239.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000240.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000241.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000242.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000243.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000244.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000245.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000246.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000247.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000248.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000249.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000250.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000251.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000252.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000253.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000254.mpit
+Extrae: Intermediate raw trace file created : /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000255.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+Extrae: Proceeding with the merge of the intermediate tracefiles.
+Extrae: Executing the merge process (using /home/taller-771/BSC-handson/apps/matrix/TRACE.mpits).
+merger: Extrae 3.6.1
+mpi2prv: Assigned nodes < zarate-3c.cnca >
+mpi2prv: Assigned size per processor < 219 Mbytes >
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000000.mpit is object 1.1.1 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000001.mpit is object 1.1.2 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000002.mpit is object 1.1.3 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000003.mpit is object 1.1.4 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000004.mpit is object 1.1.5 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000005.mpit is object 1.1.6 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000006.mpit is object 1.1.7 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000007.mpit is object 1.1.8 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000008.mpit is object 1.1.9 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000009.mpit is object 1.1.10 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000010.mpit is object 1.1.11 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000011.mpit is object 1.1.12 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000012.mpit is object 1.1.13 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000013.mpit is object 1.1.14 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000014.mpit is object 1.1.15 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000015.mpit is object 1.1.16 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000016.mpit is object 1.1.17 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000017.mpit is object 1.1.18 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000018.mpit is object 1.1.19 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000019.mpit is object 1.1.20 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000020.mpit is object 1.1.21 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000021.mpit is object 1.1.22 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000022.mpit is object 1.1.23 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000023.mpit is object 1.1.24 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000024.mpit is object 1.1.25 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000025.mpit is object 1.1.26 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000026.mpit is object 1.1.27 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000027.mpit is object 1.1.28 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000028.mpit is object 1.1.29 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000029.mpit is object 1.1.30 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000030.mpit is object 1.1.31 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000031.mpit is object 1.1.32 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000032.mpit is object 1.1.33 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000033.mpit is object 1.1.34 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000034.mpit is object 1.1.35 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000035.mpit is object 1.1.36 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000036.mpit is object 1.1.37 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000037.mpit is object 1.1.38 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000038.mpit is object 1.1.39 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000039.mpit is object 1.1.40 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000040.mpit is object 1.1.41 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000041.mpit is object 1.1.42 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000042.mpit is object 1.1.43 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000043.mpit is object 1.1.44 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000044.mpit is object 1.1.45 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000045.mpit is object 1.1.46 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000046.mpit is object 1.1.47 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000047.mpit is object 1.1.48 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000048.mpit is object 1.1.49 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000049.mpit is object 1.1.50 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000050.mpit is object 1.1.51 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000051.mpit is object 1.1.52 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000052.mpit is object 1.1.53 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000053.mpit is object 1.1.54 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000054.mpit is object 1.1.55 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000055.mpit is object 1.1.56 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000056.mpit is object 1.1.57 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000057.mpit is object 1.1.58 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000058.mpit is object 1.1.59 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000059.mpit is object 1.1.60 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000060.mpit is object 1.1.61 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000061.mpit is object 1.1.62 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000062.mpit is object 1.1.63 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000063.mpit is object 1.1.64 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000064.mpit is object 1.1.65 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000065.mpit is object 1.1.66 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000066.mpit is object 1.1.67 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000067.mpit is object 1.1.68 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000068.mpit is object 1.1.69 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000069.mpit is object 1.1.70 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000070.mpit is object 1.1.71 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000071.mpit is object 1.1.72 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000072.mpit is object 1.1.73 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000073.mpit is object 1.1.74 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000074.mpit is object 1.1.75 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000075.mpit is object 1.1.76 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000076.mpit is object 1.1.77 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000077.mpit is object 1.1.78 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000078.mpit is object 1.1.79 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000079.mpit is object 1.1.80 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000080.mpit is object 1.1.81 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000081.mpit is object 1.1.82 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000082.mpit is object 1.1.83 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000083.mpit is object 1.1.84 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000084.mpit is object 1.1.85 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000085.mpit is object 1.1.86 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000086.mpit is object 1.1.87 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000087.mpit is object 1.1.88 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000088.mpit is object 1.1.89 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000089.mpit is object 1.1.90 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000090.mpit is object 1.1.91 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000091.mpit is object 1.1.92 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000092.mpit is object 1.1.93 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000093.mpit is object 1.1.94 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000094.mpit is object 1.1.95 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000095.mpit is object 1.1.96 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000096.mpit is object 1.1.97 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000097.mpit is object 1.1.98 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000098.mpit is object 1.1.99 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000099.mpit is object 1.1.100 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000100.mpit is object 1.1.101 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000101.mpit is object 1.1.102 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000102.mpit is object 1.1.103 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000103.mpit is object 1.1.104 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000104.mpit is object 1.1.105 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000105.mpit is object 1.1.106 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000106.mpit is object 1.1.107 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000107.mpit is object 1.1.108 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000108.mpit is object 1.1.109 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000109.mpit is object 1.1.110 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000110.mpit is object 1.1.111 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000111.mpit is object 1.1.112 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000112.mpit is object 1.1.113 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000113.mpit is object 1.1.114 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000114.mpit is object 1.1.115 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000115.mpit is object 1.1.116 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000116.mpit is object 1.1.117 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000117.mpit is object 1.1.118 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000118.mpit is object 1.1.119 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000119.mpit is object 1.1.120 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000120.mpit is object 1.1.121 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000121.mpit is object 1.1.122 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000122.mpit is object 1.1.123 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000123.mpit is object 1.1.124 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000124.mpit is object 1.1.125 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000125.mpit is object 1.1.126 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000126.mpit is object 1.1.127 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000127.mpit is object 1.1.128 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000128.mpit is object 1.1.129 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000129.mpit is object 1.1.130 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000130.mpit is object 1.1.131 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000131.mpit is object 1.1.132 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000132.mpit is object 1.1.133 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000133.mpit is object 1.1.134 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000134.mpit is object 1.1.135 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000135.mpit is object 1.1.136 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000136.mpit is object 1.1.137 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000137.mpit is object 1.1.138 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000138.mpit is object 1.1.139 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000139.mpit is object 1.1.140 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000140.mpit is object 1.1.141 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000141.mpit is object 1.1.142 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000142.mpit is object 1.1.143 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000143.mpit is object 1.1.144 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000144.mpit is object 1.1.145 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000145.mpit is object 1.1.146 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000146.mpit is object 1.1.147 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000147.mpit is object 1.1.148 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000148.mpit is object 1.1.149 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000149.mpit is object 1.1.150 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000150.mpit is object 1.1.151 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000151.mpit is object 1.1.152 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000152.mpit is object 1.1.153 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000153.mpit is object 1.1.154 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000154.mpit is object 1.1.155 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000155.mpit is object 1.1.156 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000156.mpit is object 1.1.157 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000157.mpit is object 1.1.158 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000158.mpit is object 1.1.159 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000159.mpit is object 1.1.160 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000160.mpit is object 1.1.161 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000161.mpit is object 1.1.162 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000162.mpit is object 1.1.163 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000163.mpit is object 1.1.164 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000164.mpit is object 1.1.165 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000165.mpit is object 1.1.166 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000166.mpit is object 1.1.167 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000167.mpit is object 1.1.168 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000168.mpit is object 1.1.169 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000169.mpit is object 1.1.170 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000170.mpit is object 1.1.171 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000171.mpit is object 1.1.172 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000172.mpit is object 1.1.173 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000173.mpit is object 1.1.174 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000174.mpit is object 1.1.175 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000175.mpit is object 1.1.176 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000176.mpit is object 1.1.177 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000177.mpit is object 1.1.178 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000178.mpit is object 1.1.179 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000179.mpit is object 1.1.180 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000180.mpit is object 1.1.181 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000181.mpit is object 1.1.182 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000182.mpit is object 1.1.183 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000183.mpit is object 1.1.184 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000184.mpit is object 1.1.185 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000185.mpit is object 1.1.186 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000186.mpit is object 1.1.187 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000187.mpit is object 1.1.188 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000188.mpit is object 1.1.189 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000189.mpit is object 1.1.190 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000190.mpit is object 1.1.191 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000191.mpit is object 1.1.192 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000192.mpit is object 1.1.193 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000193.mpit is object 1.1.194 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000194.mpit is object 1.1.195 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000195.mpit is object 1.1.196 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000196.mpit is object 1.1.197 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000197.mpit is object 1.1.198 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000198.mpit is object 1.1.199 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000199.mpit is object 1.1.200 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000200.mpit is object 1.1.201 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000201.mpit is object 1.1.202 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000202.mpit is object 1.1.203 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000203.mpit is object 1.1.204 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000204.mpit is object 1.1.205 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000205.mpit is object 1.1.206 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000206.mpit is object 1.1.207 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000207.mpit is object 1.1.208 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000208.mpit is object 1.1.209 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000209.mpit is object 1.1.210 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000210.mpit is object 1.1.211 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000211.mpit is object 1.1.212 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000212.mpit is object 1.1.213 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000213.mpit is object 1.1.214 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000214.mpit is object 1.1.215 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000215.mpit is object 1.1.216 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000216.mpit is object 1.1.217 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000217.mpit is object 1.1.218 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000218.mpit is object 1.1.219 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000219.mpit is object 1.1.220 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000220.mpit is object 1.1.221 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000221.mpit is object 1.1.222 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000222.mpit is object 1.1.223 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000223.mpit is object 1.1.224 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000224.mpit is object 1.1.225 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000225.mpit is object 1.1.226 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000226.mpit is object 1.1.227 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000227.mpit is object 1.1.228 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000228.mpit is object 1.1.229 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000229.mpit is object 1.1.230 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000230.mpit is object 1.1.231 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000231.mpit is object 1.1.232 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000232.mpit is object 1.1.233 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000233.mpit is object 1.1.234 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000234.mpit is object 1.1.235 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000235.mpit is object 1.1.236 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000236.mpit is object 1.1.237 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000237.mpit is object 1.1.238 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000238.mpit is object 1.1.239 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000239.mpit is object 1.1.240 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000240.mpit is object 1.1.241 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000241.mpit is object 1.1.242 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000242.mpit is object 1.1.243 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000243.mpit is object 1.1.244 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000244.mpit is object 1.1.245 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000245.mpit is object 1.1.246 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000246.mpit is object 1.1.247 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000247.mpit is object 1.1.248 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000248.mpit is object 1.1.249 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000249.mpit is object 1.1.250 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000250.mpit is object 1.1.251 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000251.mpit is object 1.1.252 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000252.mpit is object 1.1.253 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000253.mpit is object 1.1.254 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000254.mpit is object 1.1.255 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: File /home/taller-771/BSC-handson/apps/matrix/set-0/TRACE@zarate-3c.cnca.0000084598000000000255.mpit is object 1.1.256 on node zarate-3c.cnca assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: A total of 4 symbols were imported from /home/taller-771/BSC-handson/apps/matrix/TRACE.sym file
+mpi2prv: 0 function symbols imported
+mpi2prv: 4 HWC counter descriptions imported
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Enabling Time Synchronization (Node).
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 35 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 26214 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 3 minutes 40 seconds
+mpi2prv: Resulting tracefile occupies 239453978 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! matrix.l2.prv has been generated.
