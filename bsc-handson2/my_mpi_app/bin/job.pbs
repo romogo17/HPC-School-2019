@@ -1,0 +1,11 @@
+#PBS -N my_mpi_app
+#PBS -q phi-n1h72
+#PBS -l nodes=1:ppn=5
+#PBS -l walltime=00:20:00
+
+export TRACE_NAME=my_mpi_app.prv
+module load mpich
+cd $PBS_O_WORKDIR
+
+mpirun -n 24 ./extrae/trace.sh ./my_mpi_app
+
